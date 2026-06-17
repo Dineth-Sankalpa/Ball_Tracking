@@ -2,20 +2,13 @@ import rclpy
 from rclpy.node import Node
 from geometry_msgs.msg import Point
 
-# # Attempt to load the Kobuki library your instructor mentioned
-# try:
-#     # Note: Ensure this is the correct import for the specific library you install!
-#     from kobukidriver import Kobuki
-#     HAS_KOBUKI = True
-# except ImportError:
-#     HAS_KOBUKI = False
-
-import sys
-
-sys.path.append('/path/to/your/cloned/kobuki-python') 
-from QBot import QBot
-
-HAS_KOBUKI = True
+# Attempt to load the Kobuki library your instructor mentioned
+try:
+    # Note: Ensure this is the correct import for the specific library you install!
+    from kobukidriver import Kobuki
+    HAS_KOBUKI = True
+except ImportError:
+    HAS_KOBUKI = False
 
 class ControlNode(Node):
     def __init__(self):
@@ -31,32 +24,49 @@ class ControlNode(Node):
         self.kp = 0.005 # Tuning constant for rotation speed
         
         if HAS_KOBUKI:
-            self.kobuki_robot = QBot('/dev/ttyUSB0') # Default USB port
+            self.kobuki_robot = Kobuki()
             self.get_logger().info("Connected to Kobuki robot via USB.")
         else:
             self.get_logger().warn("Kobuki library not found. Running in simulation/print mode.")
 
-    def listener_callback(self, msg):
+   def listener_callback(self, msg):
         is_detected = (msg.z == 1.0)
         error_x = msg.x
+        depth = msg.y 
         
+        # Target distance (Change to 500.0 if your depth is in millimeters!)
+        target_depth = 0.50 
+        
+        # Linear speed tuning constant
+        kp_linear = 0.5  
+
         if is_detected:
+            # 1. Calculate Angular Velocity (Rotation)
             angular_z = self.kp * error_x
-            linear_x = 0.1 # Move forward slightly
-            self.get_logger().info(f"MOVING - Linear: {linear_x}, Angular: {angular_z:.2f}")
+            
+            # 2. Calculate Linear Velocity (Forward/Backward)
+            if depth != -1.0:
+                depth_error = depth - target_depth
+                linear_x = kp_linear * depth_error
+                
+                # Cap the speed so the robot doesn't jerk violently
+                linear_x = max(-0.2, min(linear_x, 0.2))
+            else:
+                # If depth is invalid (NaN), stop moving forward but keep rotating to track
+                linear_x = 0.0 
+
+            self.get_logger().info(f"MOVING - Linear: {linear_x:.2f}, Angular: {angular_z:.2f}, Depth: {depth:.2f}")
             
             if HAS_KOBUKI:
-                # IMPORTANT: Your teammate must verify this exact function name in their library documentation
                 # self.kobuki_robot.set_velocity(linear_x, angular_z)
                 pass 
                 
         else:
             self.get_logger().info("STOPPING - No ball in sight.", throttle_duration_sec=1.5)
-            
             if HAS_KOBUKI:
                 # self.kobuki_robot.set_velocity(0.0, 0.0)
                 pass
-
+            
 def main(args=None):
     rclpy.init(args=args)
     node = ControlNode()
