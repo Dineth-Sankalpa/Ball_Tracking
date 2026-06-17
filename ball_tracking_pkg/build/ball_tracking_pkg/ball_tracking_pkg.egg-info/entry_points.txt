@@ -1,3 +1,0 @@
-[console_scripts]
-tracker = ball_tracking_pkg.blue_ball_tracker:main
-

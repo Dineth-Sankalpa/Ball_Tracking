@@ -5,9 +5,14 @@ def generate_launch_description():
     return LaunchDescription([
         Node(
             package='ball_tracking_pkg',
-            executable='tracker',
-            name='tracker_node',
-            output='screen',
-            emulate_tty=True  # Helpful to see logs in the terminal
+            executable='vision_node',
+            name='vision_node',
+            output='screen'
+        ),
+        Node(
+            package='ball_tracking_pkg',
+            executable='control_node',
+            name='control_node',
+            output='screen'
         )
     ])

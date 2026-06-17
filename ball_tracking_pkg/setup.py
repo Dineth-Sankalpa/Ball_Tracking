@@ -12,21 +12,20 @@ setup(
         ('share/ament_index/resource_index/packages',
             ['resource/' + package_name]),
         ('share/' + package_name, ['package.xml']),
-        
-        # This line tells ROS2 to install your launch files
         (os.path.join('share', package_name, 'launch'), glob(os.path.join('launch', '*launch.[pxy][yma]*')))
     ],
     install_requires=['setuptools'],
     zip_safe=True,
     maintainer='Your Name',
-    maintainer_email='dinethsankalpaofficial@gmail.com',
-    description='Kobuki QBot Blue Ball Tracking via Xbox360 RGBD Camera',
+    maintainer_email='your_email@example.com',
+    description='Kobuki QBot Blue Ball Tracking Package',
     license='Apache License 2.0',
     tests_require=['pytest'],
     entry_points={
         'console_scripts': [
-            # FORMAT: executable_name = package_name.python_script_name:main
-            'tracker = ball_tracking_pkg.tracker:main',
+            # We now have two separate executable scripts
+            'vision_node = ball_tracking_pkg.vision_node:main',
+            'control_node = ball_tracking_pkg.control_node:main',
         ],
     },
 )
