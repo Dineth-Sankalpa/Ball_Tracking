@@ -1,0 +1,42 @@
+[0.655s] Invoking command in '/home/netrunner/Documents/BallTracker/src/ball_tracking_pkg': PYTHONPATH=/home/netrunner/Documents/BallTracker/src/ball_tracking_pkg/build/ball_tracking_pkg/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/netrunner/Documents/BallTracker/src/ball_tracking_pkg/install/ball_tracking_pkg/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base build/ball_tracking_pkg build --build-base /home/netrunner/Documents/BallTracker/src/ball_tracking_pkg/build/ball_tracking_pkg/build install --record /home/netrunner/Documents/BallTracker/src/ball_tracking_pkg/build/ball_tracking_pkg/install.log --single-version-externally-managed install_data
+[0.871s] running egg_info
+[0.872s] creating build/ball_tracking_pkg/ball_tracking_pkg.egg-info
+[0.872s] writing build/ball_tracking_pkg/ball_tracking_pkg.egg-info/PKG-INFO
+[0.872s] writing dependency_links to build/ball_tracking_pkg/ball_tracking_pkg.egg-info/dependency_links.txt
+[0.872s] writing entry points to build/ball_tracking_pkg/ball_tracking_pkg.egg-info/entry_points.txt
+[0.872s] writing requirements to build/ball_tracking_pkg/ball_tracking_pkg.egg-info/requires.txt
+[0.872s] writing top-level names to build/ball_tracking_pkg/ball_tracking_pkg.egg-info/top_level.txt
+[0.873s] writing manifest file 'build/ball_tracking_pkg/ball_tracking_pkg.egg-info/SOURCES.txt'
+[0.874s] reading manifest file 'build/ball_tracking_pkg/ball_tracking_pkg.egg-info/SOURCES.txt'
+[0.875s] writing manifest file 'build/ball_tracking_pkg/ball_tracking_pkg.egg-info/SOURCES.txt'
+[0.875s] running build
+[0.875s] running build_py
+[0.875s] creating /home/netrunner/Documents/BallTracker/src/ball_tracking_pkg/build/ball_tracking_pkg/build
+[0.876s] creating /home/netrunner/Documents/BallTracker/src/ball_tracking_pkg/build/ball_tracking_pkg/build/lib
+[0.876s] creating /home/netrunner/Documents/BallTracker/src/ball_tracking_pkg/build/ball_tracking_pkg/build/lib/ball_tracking_pkg
+[0.876s] copying ball_tracking_pkg/robot_control.py -> /home/netrunner/Documents/BallTracker/src/ball_tracking_pkg/build/ball_tracking_pkg/build/lib/ball_tracking_pkg
+[0.876s] copying ball_tracking_pkg/__init__.py -> /home/netrunner/Documents/BallTracker/src/ball_tracking_pkg/build/ball_tracking_pkg/build/lib/ball_tracking_pkg
+[0.876s] copying ball_tracking_pkg/tracker.py -> /home/netrunner/Documents/BallTracker/src/ball_tracking_pkg/build/ball_tracking_pkg/build/lib/ball_tracking_pkg
+[0.876s] running install
+[0.876s] running install_lib
+[0.877s] creating /home/netrunner/Documents/BallTracker/src/ball_tracking_pkg/install/ball_tracking_pkg/lib/python3.10/site-packages/ball_tracking_pkg
+[0.877s] copying /home/netrunner/Documents/BallTracker/src/ball_tracking_pkg/build/ball_tracking_pkg/build/lib/ball_tracking_pkg/robot_control.py -> /home/netrunner/Documents/BallTracker/src/ball_tracking_pkg/install/ball_tracking_pkg/lib/python3.10/site-packages/ball_tracking_pkg
+[0.877s] copying /home/netrunner/Documents/BallTracker/src/ball_tracking_pkg/build/ball_tracking_pkg/build/lib/ball_tracking_pkg/__init__.py -> /home/netrunner/Documents/BallTracker/src/ball_tracking_pkg/install/ball_tracking_pkg/lib/python3.10/site-packages/ball_tracking_pkg
+[0.877s] copying /home/netrunner/Documents/BallTracker/src/ball_tracking_pkg/build/ball_tracking_pkg/build/lib/ball_tracking_pkg/tracker.py -> /home/netrunner/Documents/BallTracker/src/ball_tracking_pkg/install/ball_tracking_pkg/lib/python3.10/site-packages/ball_tracking_pkg
+[0.878s] byte-compiling /home/netrunner/Documents/BallTracker/src/ball_tracking_pkg/install/ball_tracking_pkg/lib/python3.10/site-packages/ball_tracking_pkg/robot_control.py to robot_control.cpython-310.pyc
+[0.878s] byte-compiling /home/netrunner/Documents/BallTracker/src/ball_tracking_pkg/install/ball_tracking_pkg/lib/python3.10/site-packages/ball_tracking_pkg/__init__.py to __init__.cpython-310.pyc
+[0.878s] byte-compiling /home/netrunner/Documents/BallTracker/src/ball_tracking_pkg/install/ball_tracking_pkg/lib/python3.10/site-packages/ball_tracking_pkg/tracker.py to tracker.cpython-310.pyc
+[0.878s] running install_data
+[0.878s] creating /home/netrunner/Documents/BallTracker/src/ball_tracking_pkg/install/ball_tracking_pkg/share/ament_index
+[0.878s] creating /home/netrunner/Documents/BallTracker/src/ball_tracking_pkg/install/ball_tracking_pkg/share/ament_index/resource_index
+[0.878s] creating /home/netrunner/Documents/BallTracker/src/ball_tracking_pkg/install/ball_tracking_pkg/share/ament_index/resource_index/packages
+[0.879s] copying resource/ball_tracking_pkg -> /home/netrunner/Documents/BallTracker/src/ball_tracking_pkg/install/ball_tracking_pkg/share/ament_index/resource_index/packages
+[0.879s] copying package.xml -> /home/netrunner/Documents/BallTracker/src/ball_tracking_pkg/install/ball_tracking_pkg/share/ball_tracking_pkg
+[0.879s] creating /home/netrunner/Documents/BallTracker/src/ball_tracking_pkg/install/ball_tracking_pkg/share/ball_tracking_pkg/launch
+[0.879s] copying launch/tracker_launch.py -> /home/netrunner/Documents/BallTracker/src/ball_tracking_pkg/install/ball_tracking_pkg/share/ball_tracking_pkg/launch
+[0.879s] running install_egg_info
+[0.880s] Copying build/ball_tracking_pkg/ball_tracking_pkg.egg-info to /home/netrunner/Documents/BallTracker/src/ball_tracking_pkg/install/ball_tracking_pkg/lib/python3.10/site-packages/ball_tracking_pkg-0.0.0-py3.10.egg-info
+[0.881s] running install_scripts
+[0.900s] Installing tracker script to /home/netrunner/Documents/BallTracker/src/ball_tracking_pkg/install/ball_tracking_pkg/lib/ball_tracking_pkg
+[0.901s] writing list of installed files to '/home/netrunner/Documents/BallTracker/src/ball_tracking_pkg/build/ball_tracking_pkg/install.log'
+[0.933s] Invoked command in '/home/netrunner/Documents/BallTracker/src/ball_tracking_pkg' returned '0': PYTHONPATH=/home/netrunner/Documents/BallTracker/src/ball_tracking_pkg/build/ball_tracking_pkg/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/netrunner/Documents/BallTracker/src/ball_tracking_pkg/install/ball_tracking_pkg/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base build/ball_tracking_pkg build --build-base /home/netrunner/Documents/BallTracker/src/ball_tracking_pkg/build/ball_tracking_pkg/build install --record /home/netrunner/Documents/BallTracker/src/ball_tracking_pkg/build/ball_tracking_pkg/install.log --single-version-externally-managed install_data
