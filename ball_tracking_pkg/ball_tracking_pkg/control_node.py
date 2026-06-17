@@ -2,13 +2,20 @@ import rclpy
 from rclpy.node import Node
 from geometry_msgs.msg import Point
 
-# Attempt to load the Kobuki library your instructor mentioned
-try:
-    # Note: Ensure this is the correct import for the specific library you install!
-    from kobukidriver import Kobuki
-    HAS_KOBUKI = True
-except ImportError:
-    HAS_KOBUKI = False
+# # Attempt to load the Kobuki library your instructor mentioned
+# try:
+#     # Note: Ensure this is the correct import for the specific library you install!
+#     from kobukidriver import Kobuki
+#     HAS_KOBUKI = True
+# except ImportError:
+#     HAS_KOBUKI = False
+
+import sys
+
+sys.path.append('/path/to/your/cloned/kobuki-python') 
+from QBot import QBot
+
+HAS_KOBUKI = True
 
 class ControlNode(Node):
     def __init__(self):
@@ -24,7 +31,7 @@ class ControlNode(Node):
         self.kp = 0.005 # Tuning constant for rotation speed
         
         if HAS_KOBUKI:
-            self.kobuki_robot = Kobuki()
+            self.kobuki_robot = QBot('/dev/ttyUSB0') # Default USB port
             self.get_logger().info("Connected to Kobuki robot via USB.")
         else:
             self.get_logger().warn("Kobuki library not found. Running in simulation/print mode.")

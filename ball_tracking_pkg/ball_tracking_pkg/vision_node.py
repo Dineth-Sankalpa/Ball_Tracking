@@ -13,7 +13,7 @@ class VisionNode(Node):
         # Subscribe to the camera
         self.subscription = self.create_subscription(
             Image,
-            '/camera/image_raw',
+            '/camera/color/image_raw',
             self.image_callback,
             10)
         
