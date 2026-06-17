@@ -32,9 +32,12 @@ class VisionNode(Node):
         self.latest_depth_frame = None 
         
         # --- PARALLAX OFFSET ---
-        # Adjust this value. If the depth is constantly reading the background 
-        # instead of the ball, increase or decrease this number.
         self.depth_pixel_offset_x = -25 
+        
+        # --- SMOOTHING AND PERSISTENCE STATE ---
+        self.last_ball_x = None
+        self.last_ball_y = None
+        self.alpha = 0.3  # Smoothing factor (0.1 = slow/smooth, 0.9 = fast/reactive)
         
         self.get_logger().info("Vision Node started. Tracking blue ball...")
 
@@ -48,19 +51,15 @@ class VisionNode(Node):
         """Extracts the median depth from a small patch to avoid noise/zeros."""
         half_patch = patch_size // 2
         
-        # Apply the parallax offset to align with the depth camera's perspective
         depth_x = center_x + self.depth_pixel_offset_x
-        depth_y = center_y # Vertical offset is usually negligible
+        depth_y = center_y 
         
-        # Ensure coordinates are within image bounds (assuming 640x480)
         depth_x = max(half_patch, min(depth_x, 639 - half_patch))
         depth_y = max(half_patch, min(depth_y, 479 - half_patch))
         
-        # Extract a small patch of depth values
         patch = depth_image[depth_y-half_patch : depth_y+half_patch+1, 
                             depth_x-half_patch : depth_x+half_patch+1]
         
-        # Filter out 0.0 or NaN values (Kinect blind spots)
         valid_depths = patch[(patch > 0.0) & (~np.isnan(patch))]
         
         if len(valid_depths) > 0:
@@ -75,6 +74,7 @@ class VisionNode(Node):
 
         hsv_frame = cv2.cvtColor(frame, cv2.COLOR_BGR2HSV)
         
+        # --- CALIBRATED COLOR RANGE ---
         lower_blue = np.array([70, 50, 50])
         upper_blue = np.array([100, 255, 255])
         
@@ -82,33 +82,56 @@ class VisionNode(Node):
         contours, _ = cv2.findContours(mask, cv2.RETR_EXTERNAL, cv2.CHAIN_APPROX_SIMPLE)
         
         ball_detected = False
-        ball_x, ball_y = 0, 0
+        curr_x, curr_y = 0, 0
         
-        for contour in contours:
-            if cv2.contourArea(contour) > 500:
-                M = cv2.moments(contour)
-                if M["m00"] != 0:
-                    ball_x = int(M["m10"] / M["m00"])
-                    ball_y = int(M["m01"] / M["m00"])
-                    ball_detected = True
+        # --- CALIBRATED VISION LOGIC ---
+        if contours:
+            largest_contour = max(contours, key=cv2.contourArea)
+            area = cv2.contourArea(largest_contour)
+            
+            if area > 100:
+                perimeter = cv2.arcLength(largest_contour, True)
+                
+                if perimeter > 0:
+                    circularity = 4 * np.pi * (area / (perimeter**2))
                     
-                    # Draw ball center
-                    cv2.circle(frame, (ball_x, ball_y), 10, (0, 255, 0), -1)
-                    
-                    # Draw where we are looking for depth
-                    depth_look_x = max(0, min(ball_x + self.depth_pixel_offset_x, 639))
-                    cv2.circle(frame, (depth_look_x, ball_y), 5, (255, 0, 0), -1)
-                    cv2.line(frame, (ball_x, ball_y), (depth_look_x, ball_y), (255, 255, 0), 2)
-                break 
-        
+                    if circularity > 0.25:
+                        M = cv2.moments(largest_contour)
+                        if M["m00"] != 0:
+                            temp_x = int(M["m10"] / M["m00"])
+                            temp_y = int(M["m01"] / M["m00"])
+                            
+                            # --- JERK REJECTION LOGIC ---
+                            if self.last_ball_x is not None and abs(temp_x - self.last_ball_x) > 150:
+                                ball_detected = False # Ignore this frame, jumped too far
+                            else:
+                                curr_x, curr_y = temp_x, temp_y
+                                ball_detected = True
+                                
+                                # Draw ball center and depth look-point
+                                cv2.circle(frame, (curr_x, curr_y), 10, (0, 255, 0), -1)
+                                depth_look_x = max(0, min(curr_x + self.depth_pixel_offset_x, 639))
+                                cv2.circle(frame, (depth_look_x, curr_y), 5, (255, 0, 0), -1)
+                                cv2.line(frame, (curr_x, curr_y), (depth_look_x, curr_y), (255, 255, 0), 2)
+
         msg_out = Point()
         
+        # --- PUBLISHING LOGIC ---
         if ball_detected:
-            msg_out.x = float(self.target_center_x - ball_x)
-            msg_out.z = 1.0 
+            # 1. APPLY SMOOTHING (EMA)
+            if self.last_ball_x is None:
+                self.last_ball_x, self.last_ball_y = float(curr_x), float(curr_y)
+            else:
+                self.last_ball_x = (self.alpha * curr_x) + ((1 - self.alpha) * self.last_ball_x)
+                self.last_ball_y = (self.alpha * curr_y) + ((1 - self.alpha) * self.last_ball_y)
             
+            # 2. SET PUBLISHER VALUES
+            msg_out.x = float(self.target_center_x - self.last_ball_x)
+            msg_out.z = 1.0 # State 1: Actively tracking
+            
+            # 3. GRAB DEPTH AT SMOOTHED LOCATION
             if self.latest_depth_frame is not None:
-                depth_val = self.get_robust_depth(self.latest_depth_frame, ball_x, ball_y)
+                depth_val = self.get_robust_depth(self.latest_depth_frame, int(self.last_ball_x), int(self.last_ball_y))
                 msg_out.y = float(depth_val)
                 
                 status_text = f"Depth: {depth_val:.2f}" if depth_val != -1.0 else "Depth: Invalid"
@@ -116,7 +139,18 @@ class VisionNode(Node):
                 cv2.putText(frame, status_text, (10, 30), cv2.FONT_HERSHEY_SIMPLEX, 0.7, color, 2)
             else:
                 msg_out.y = -1.0
+                
+        elif self.last_ball_x is not None:
+            # --- SEARCH MEMORY LOGIC ---
+            # Ball is lost, but we remember where it was.
+            msg_out.x = float(self.target_center_x - self.last_ball_x)
+            msg_out.y = -1.0
+            msg_out.z = 0.0 # State 0: Lost/Searching
+            
+            cv2.putText(frame, "Ball Lost - Searching...", (10, 30), cv2.FONT_HERSHEY_SIMPLEX, 0.7, (0, 165, 255), 2)
+            
         else:
+            # Startup state: No ball seen yet
             msg_out.x = 0.0
             msg_out.y = 0.0
             msg_out.z = 0.0
