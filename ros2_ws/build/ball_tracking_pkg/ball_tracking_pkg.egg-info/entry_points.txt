@@ -1,0 +1,4 @@
+[console_scripts]
+control_node = ball_tracking_pkg.control_node:main
+vision_node = ball_tracking_pkg.vision_node:main
+

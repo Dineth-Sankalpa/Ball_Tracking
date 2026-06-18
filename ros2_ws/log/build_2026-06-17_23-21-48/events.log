@@ -1,0 +1,716 @@
+[0.000000] (-) TimerEvent: {}
+[0.000847] (ball_tracking_pkg) JobQueued: {'identifier': 'ball_tracking_pkg', 'dependencies': OrderedDict()}
+[0.001819] (kinect_ros2) JobQueued: {'identifier': 'kinect_ros2', 'dependencies': OrderedDict()}
+[0.001919] (ball_tracking_pkg) JobStarted: {'identifier': 'ball_tracking_pkg'}
+[0.066959] (kinect_ros2) JobStarted: {'identifier': 'kinect_ros2'}
+[0.099076] (-) TimerEvent: {}
+[0.200312] (-) TimerEvent: {}
+[0.301037] (-) TimerEvent: {}
+[0.401804] (-) TimerEvent: {}
+[0.502529] (-) TimerEvent: {}
+[0.603186] (-) TimerEvent: {}
+[0.703880] (-) TimerEvent: {}
+[0.804555] (-) TimerEvent: {}
+[0.905294] (-) TimerEvent: {}
+[1.005953] (-) TimerEvent: {}
+[1.106642] (-) TimerEvent: {}
+[1.207387] (-) TimerEvent: {}
+[1.308182] (-) TimerEvent: {}
+[1.409105] (-) TimerEvent: {}
+[1.456450] (kinect_ros2) JobProgress: {'identifier': 'kinect_ros2', 'progress': 'cmake'}
+[1.459293] (kinect_ros2) Command: {'cmd': ['/usr/bin/cmake', '/home/slam/Desktop/Ball_Tracking/ros2_ws/src/kinect_ros2', '-DCMAKE_INSTALL_PREFIX=/home/slam/Desktop/Ball_Tracking/ros2_ws/install/kinect_ros2'], 'cwd': '/home/slam/Desktop/Ball_Tracking/ros2_ws/build/kinect_ros2', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'slam'), ('LC_TIME', 'si_LK'), ('XDG_SESSION_TYPE', 'wayland'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/slam'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('LC_MONETARY', 'si_LK'), ('DBUS_STARTER_BUS_TYPE', 'session'), ('SYSTEMD_EXEC_PID', '1175'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus,guid=a5fa8ffa7431fb359d03019c6a32db7c'), ('COLORTERM', 'truecolor'), ('IM_CONFIG_PHASE', '1'), ('WAYLAND_DISPLAY', 'wayland-0'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'slam'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'slam'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/home/slam/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/slam:@/tmp/.ICE-unix/1175,unix/slam:/tmp/.ICE-unix/1175'), ('XDG_MENU_PREFIX', 'gnome-'), ('LC_ADDRESS', 'si_LK'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/cfcfb565_0ab5_4b27_874d_d9a18c016b23'), ('GNOME_SETUP_DISPLAY', ':1'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('LC_TELEPHONE', 'si_LK'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.9Y94Q3'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.108'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LC_NAME', 'si_LK'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'si_LK'), ('LC_IDENTIFICATION', 'si_LK'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/slam/Desktop/Ball_Tracking/ros2_ws/build/kinect_ros2'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('DBUS_STARTER_ADDRESS', 'unix:path=/run/user/1000/bus,guid=a5fa8ffa7431fb359d03019c6a32db7c'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('LC_NUMERIC', 'si_LK'), ('LC_PAPER', 'si_LK'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/opt/ros/humble')]), 'shell': False}
+[1.509268] (-) TimerEvent: {}
+[1.610088] (-) TimerEvent: {}
+[1.710801] (-) TimerEvent: {}
+[1.811523] (-) TimerEvent: {}
+[1.912427] (-) TimerEvent: {}
+[2.013548] (-) TimerEvent: {}
+[2.114275] (-) TimerEvent: {}
+[2.214974] (-) TimerEvent: {}
+[2.315695] (-) TimerEvent: {}
+[2.416492] (-) TimerEvent: {}
+[2.517265] (-) TimerEvent: {}
+[2.618201] (-) TimerEvent: {}
+[2.621636] (kinect_ros2) StdoutLine: {'line': b'-- The C compiler identification is GNU 11.4.0\n'}
+[2.718404] (-) TimerEvent: {}
+[2.819108] (-) TimerEvent: {}
+[2.919891] (-) TimerEvent: {}
+[3.020974] (-) TimerEvent: {}
+[3.121852] (-) TimerEvent: {}
+[3.222958] (-) TimerEvent: {}
+[3.323951] (-) TimerEvent: {}
+[3.425009] (-) TimerEvent: {}
+[3.513694] (kinect_ros2) StdoutLine: {'line': b'-- The CXX compiler identification is GNU 11.4.0\n'}
+[3.525992] (-) TimerEvent: {}
+[3.573266] (kinect_ros2) StdoutLine: {'line': b'-- Detecting C compiler ABI info\n'}
+[3.626389] (-) TimerEvent: {}
+[3.728142] (-) TimerEvent: {}
+[3.829005] (-) TimerEvent: {}
+[3.929898] (-) TimerEvent: {}
+[4.031102] (-) TimerEvent: {}
+[4.040270] (kinect_ros2) StdoutLine: {'line': b'-- Detecting C compiler ABI info - done\n'}
+[4.074035] (kinect_ros2) StdoutLine: {'line': b'-- Check for working C compiler: /usr/bin/cc - skipped\n'}
+[4.077654] (kinect_ros2) StdoutLine: {'line': b'-- Detecting C compile features\n'}
+[4.087483] (kinect_ros2) StdoutLine: {'line': b'-- Detecting C compile features - done\n'}
+[4.110922] (kinect_ros2) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info\n'}
+[4.131425] (-) TimerEvent: {}
+[4.194346] (ball_tracking_pkg) Command: {'cmd': ['/usr/bin/python3', '-W', 'ignore:setup.py install is deprecated', '-W', 'ignore:easy_install command is deprecated', 'setup.py', 'egg_info', '--egg-base', '../../build/ball_tracking_pkg', 'build', '--build-base', '/home/slam/Desktop/Ball_Tracking/ros2_ws/build/ball_tracking_pkg/build', 'install', '--record', '/home/slam/Desktop/Ball_Tracking/ros2_ws/build/ball_tracking_pkg/install.log', '--single-version-externally-managed', 'install_data'], 'cwd': '/home/slam/Desktop/Ball_Tracking/ros2_ws/src/ball_tracking_pkg', 'env': {'LESSOPEN': '| /usr/bin/lesspipe %s', 'USER': 'slam', 'LC_TIME': 'si_LK', 'XDG_SESSION_TYPE': 'wayland', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib', 'HOME': '/home/slam', 'DESKTOP_SESSION': 'ubuntu', 'ROS_PYTHON_VERSION': '3', 'GNOME_SHELL_SESSION_MODE': 'ubuntu', 'GTK_MODULES': 'gail:atk-bridge', 'LC_MONETARY': 'si_LK', 'DBUS_STARTER_BUS_TYPE': 'session', 'SYSTEMD_EXEC_PID': '1175', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus,guid=a5fa8ffa7431fb359d03019c6a32db7c', 'COLORTERM': 'truecolor', 'IM_CONFIG_PHASE': '1', 'WAYLAND_DISPLAY': 'wayland-0', 'ROS_DISTRO': 'humble', 'LOGNAME': 'slam', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'XDG_SESSION_CLASS': 'user', 'USERNAME': 'slam', 'TERM': 'xterm-256color', 'GNOME_DESKTOP_SESSION_ID': 'this-is-deprecated', 'ROS_LOCALHOST_ONLY': '0', 'PATH': '/opt/ros/humble/bin:/home/slam/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin', 'SESSION_MANAGER': 'local/slam:@/tmp/.ICE-unix/1175,unix/slam:/tmp/.ICE-unix/1175', 'XDG_MENU_PREFIX': 'gnome-', 'LC_ADDRESS': 'si_LK', 'GNOME_TERMINAL_SCREEN': '/org/gnome/Terminal/screen/cfcfb565_0ab5_4b27_874d_d9a18c016b23', 'GNOME_SETUP_DISPLAY': ':1', 'XDG_RUNTIME_DIR': '/run/user/1000', 'DISPLAY': ':0', 'LANG': 'en_US.UTF-8', 'XDG_CURRENT_DESKTOP': 'ubuntu:GNOME', 'LC_TELEPHONE': 'si_LK', 'XMODIFIERS': '@im=ibus', 'XDG_SESSION_DESKTOP': 'ubuntu', 'XAUTHORITY': '/run/user/1000/.mutter-Xwaylandauth.9Y94Q3', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:', 'GNOME_TERMINAL_SERVICE': ':1.108', 'SSH_AGENT_LAUNCHER': 'gnome-keyring', 'SSH_AUTH_SOCK': '/run/user/1000/keyring/ssh', 'AMENT_PREFIX_PATH': '/opt/ros/humble', 'SHELL': '/bin/bash', 'LC_NAME': 'si_LK', 'QT_ACCESSIBILITY': '1', 'GDMSESSION': 'ubuntu', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'LC_MEASUREMENT': 'si_LK', 'LC_IDENTIFICATION': 'si_LK', 'QT_IM_MODULE': 'ibus', 'PWD': '/home/slam/Desktop/Ball_Tracking/ros2_ws/build/ball_tracking_pkg', 'LC_ALL': 'en_US.UTF-8', 'XDG_CONFIG_DIRS': '/etc/xdg/xdg-ubuntu:/etc/xdg', 'DBUS_STARTER_ADDRESS': 'unix:path=/run/user/1000/bus,guid=a5fa8ffa7431fb359d03019c6a32db7c', 'XDG_DATA_DIRS': '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop', 'PYTHONPATH': '/home/slam/Desktop/Ball_Tracking/ros2_ws/build/ball_tracking_pkg/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/slam/Desktop/Ball_Tracking/ros2_ws/install/ball_tracking_pkg/lib/python3.10/site-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages', 'LC_NUMERIC': 'si_LK', 'LC_PAPER': 'si_LK', 'COLCON': '1', 'VTE_VERSION': '6800'}, 'shell': False}
+[4.231623] (-) TimerEvent: {}
+[4.332536] (-) TimerEvent: {}
+[4.433354] (-) TimerEvent: {}
+[4.534359] (-) TimerEvent: {}
+[4.581836] (kinect_ros2) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info - done\n'}
+[4.612031] (kinect_ros2) StdoutLine: {'line': b'-- Check for working CXX compiler: /usr/bin/c++ - skipped\n'}
+[4.613274] (kinect_ros2) StdoutLine: {'line': b'-- Detecting CXX compile features\n'}
+[4.615136] (kinect_ros2) StdoutLine: {'line': b'-- Detecting CXX compile features - done\n'}
+[4.634577] (-) TimerEvent: {}
+[4.666412] (kinect_ros2) StdoutLine: {'line': b'-- Found ament_cmake: 1.3.14 (/opt/ros/humble/share/ament_cmake/cmake)\n'}
+[4.734769] (-) TimerEvent: {}
+[4.835571] (-) TimerEvent: {}
+[4.936318] (-) TimerEvent: {}
+[5.037415] (-) TimerEvent: {}
+[5.138675] (-) TimerEvent: {}
+[5.239419] (-) TimerEvent: {}
+[5.340486] (-) TimerEvent: {}
+[5.441294] (-) TimerEvent: {}
+[5.542549] (-) TimerEvent: {}
+[5.587200] (kinect_ros2) StdoutLine: {'line': b'-- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter \n'}
+[5.643520] (-) TimerEvent: {}
+[5.744689] (-) TimerEvent: {}
+[5.845498] (-) TimerEvent: {}
+[5.855026] (ball_tracking_pkg) StdoutLine: {'line': b'running egg_info\n'}
+[5.859070] (ball_tracking_pkg) StdoutLine: {'line': b'creating ../../build/ball_tracking_pkg/ball_tracking_pkg.egg-info\n'}
+[5.860128] (ball_tracking_pkg) StdoutLine: {'line': b'writing ../../build/ball_tracking_pkg/ball_tracking_pkg.egg-info/PKG-INFO\n'}
+[5.861765] (ball_tracking_pkg) StdoutLine: {'line': b'writing dependency_links to ../../build/ball_tracking_pkg/ball_tracking_pkg.egg-info/dependency_links.txt\n'}
+[5.862588] (ball_tracking_pkg) StdoutLine: {'line': b'writing entry points to ../../build/ball_tracking_pkg/ball_tracking_pkg.egg-info/entry_points.txt\n'}
+[5.863391] (ball_tracking_pkg) StdoutLine: {'line': b'writing requirements to ../../build/ball_tracking_pkg/ball_tracking_pkg.egg-info/requires.txt\n'}
+[5.864023] (ball_tracking_pkg) StdoutLine: {'line': b'writing top-level names to ../../build/ball_tracking_pkg/ball_tracking_pkg.egg-info/top_level.txt\n'}
+[5.865185] (ball_tracking_pkg) StdoutLine: {'line': b"writing manifest file '../../build/ball_tracking_pkg/ball_tracking_pkg.egg-info/SOURCES.txt'\n"}
+[5.880644] (ball_tracking_pkg) StdoutLine: {'line': b"reading manifest file '../../build/ball_tracking_pkg/ball_tracking_pkg.egg-info/SOURCES.txt'\n"}
+[5.881747] (ball_tracking_pkg) StdoutLine: {'line': b"writing manifest file '../../build/ball_tracking_pkg/ball_tracking_pkg.egg-info/SOURCES.txt'\n"}
+[5.882682] (ball_tracking_pkg) StdoutLine: {'line': b'running build\n'}
+[5.883626] (ball_tracking_pkg) StdoutLine: {'line': b'running build_py\n'}
+[5.886525] (ball_tracking_pkg) StdoutLine: {'line': b'creating /home/slam/Desktop/Ball_Tracking/ros2_ws/build/ball_tracking_pkg/build\n'}
+[5.887195] (ball_tracking_pkg) StdoutLine: {'line': b'creating /home/slam/Desktop/Ball_Tracking/ros2_ws/build/ball_tracking_pkg/build/lib\n'}
+[5.887835] (ball_tracking_pkg) StdoutLine: {'line': b'creating /home/slam/Desktop/Ball_Tracking/ros2_ws/build/ball_tracking_pkg/build/lib/ball_tracking_pkg\n'}
+[5.889683] (ball_tracking_pkg) StdoutLine: {'line': b'copying ball_tracking_pkg/control_node.py -> /home/slam/Desktop/Ball_Tracking/ros2_ws/build/ball_tracking_pkg/build/lib/ball_tracking_pkg\n'}
+[5.890332] (ball_tracking_pkg) StdoutLine: {'line': b'copying ball_tracking_pkg/SubPayloadSchemas.py -> /home/slam/Desktop/Ball_Tracking/ros2_ws/build/ball_tracking_pkg/build/lib/ball_tracking_pkg\n'}
+[5.891214] (ball_tracking_pkg) StdoutLine: {'line': b'copying ball_tracking_pkg/vision_node.py -> /home/slam/Desktop/Ball_Tracking/ros2_ws/build/ball_tracking_pkg/build/lib/ball_tracking_pkg\n'}
+[5.898228] (ball_tracking_pkg) StdoutLine: {'line': b'copying ball_tracking_pkg/__init__.py -> /home/slam/Desktop/Ball_Tracking/ros2_ws/build/ball_tracking_pkg/build/lib/ball_tracking_pkg\n'}
+[5.898778] (ball_tracking_pkg) StdoutLine: {'line': b'copying ball_tracking_pkg/QBot.py -> /home/slam/Desktop/Ball_Tracking/ros2_ws/build/ball_tracking_pkg/build/lib/ball_tracking_pkg\n'}
+[5.899174] (ball_tracking_pkg) StdoutLine: {'line': b'copying ball_tracking_pkg/test_kobuki.py -> /home/slam/Desktop/Ball_Tracking/ros2_ws/build/ball_tracking_pkg/build/lib/ball_tracking_pkg\n'}
+[5.899542] (ball_tracking_pkg) StdoutLine: {'line': b'copying ball_tracking_pkg/DataFieldTypes.py -> /home/slam/Desktop/Ball_Tracking/ros2_ws/build/ball_tracking_pkg/build/lib/ball_tracking_pkg\n'}
+[5.900010] (ball_tracking_pkg) StdoutLine: {'line': b'running install\n'}
+[5.900536] (ball_tracking_pkg) StdoutLine: {'line': b'running install_lib\n'}
+[5.903492] (ball_tracking_pkg) StdoutLine: {'line': b'creating /home/slam/Desktop/Ball_Tracking/ros2_ws/install/ball_tracking_pkg/lib/python3.10/site-packages/ball_tracking_pkg\n'}
+[5.904122] (ball_tracking_pkg) StdoutLine: {'line': b'copying /home/slam/Desktop/Ball_Tracking/ros2_ws/build/ball_tracking_pkg/build/lib/ball_tracking_pkg/control_node.py -> /home/slam/Desktop/Ball_Tracking/ros2_ws/install/ball_tracking_pkg/lib/python3.10/site-packages/ball_tracking_pkg\n'}
+[5.904751] (ball_tracking_pkg) StdoutLine: {'line': b'copying /home/slam/Desktop/Ball_Tracking/ros2_ws/build/ball_tracking_pkg/build/lib/ball_tracking_pkg/SubPayloadSchemas.py -> /home/slam/Desktop/Ball_Tracking/ros2_ws/install/ball_tracking_pkg/lib/python3.10/site-packages/ball_tracking_pkg\n'}
+[5.905262] (ball_tracking_pkg) StdoutLine: {'line': b'copying /home/slam/Desktop/Ball_Tracking/ros2_ws/build/ball_tracking_pkg/build/lib/ball_tracking_pkg/vision_node.py -> /home/slam/Desktop/Ball_Tracking/ros2_ws/install/ball_tracking_pkg/lib/python3.10/site-packages/ball_tracking_pkg\n'}
+[5.905849] (ball_tracking_pkg) StdoutLine: {'line': b'copying /home/slam/Desktop/Ball_Tracking/ros2_ws/build/ball_tracking_pkg/build/lib/ball_tracking_pkg/__init__.py -> /home/slam/Desktop/Ball_Tracking/ros2_ws/install/ball_tracking_pkg/lib/python3.10/site-packages/ball_tracking_pkg\n'}
+[5.906465] (ball_tracking_pkg) StdoutLine: {'line': b'copying /home/slam/Desktop/Ball_Tracking/ros2_ws/build/ball_tracking_pkg/build/lib/ball_tracking_pkg/QBot.py -> /home/slam/Desktop/Ball_Tracking/ros2_ws/install/ball_tracking_pkg/lib/python3.10/site-packages/ball_tracking_pkg\n'}
+[5.907476] (ball_tracking_pkg) StdoutLine: {'line': b'copying /home/slam/Desktop/Ball_Tracking/ros2_ws/build/ball_tracking_pkg/build/lib/ball_tracking_pkg/test_kobuki.py -> /home/slam/Desktop/Ball_Tracking/ros2_ws/install/ball_tracking_pkg/lib/python3.10/site-packages/ball_tracking_pkg\n'}
+[5.908662] (ball_tracking_pkg) StdoutLine: {'line': b'copying /home/slam/Desktop/Ball_Tracking/ros2_ws/build/ball_tracking_pkg/build/lib/ball_tracking_pkg/DataFieldTypes.py -> /home/slam/Desktop/Ball_Tracking/ros2_ws/install/ball_tracking_pkg/lib/python3.10/site-packages/ball_tracking_pkg\n'}
+[5.912779] (ball_tracking_pkg) StdoutLine: {'line': b'byte-compiling /home/slam/Desktop/Ball_Tracking/ros2_ws/install/ball_tracking_pkg/lib/python3.10/site-packages/ball_tracking_pkg/control_node.py to control_node.cpython-310.pyc\n'}
+[5.919660] (ball_tracking_pkg) StdoutLine: {'line': b'byte-compiling /home/slam/Desktop/Ball_Tracking/ros2_ws/install/ball_tracking_pkg/lib/python3.10/site-packages/ball_tracking_pkg/SubPayloadSchemas.py to SubPayloadSchemas.cpython-310.pyc\n'}
+[5.922785] (ball_tracking_pkg) StdoutLine: {'line': b'byte-compiling /home/slam/Desktop/Ball_Tracking/ros2_ws/install/ball_tracking_pkg/lib/python3.10/site-packages/ball_tracking_pkg/vision_node.py to vision_node.cpython-310.pyc\n'}
+[5.930385] (ball_tracking_pkg) StdoutLine: {'line': b'byte-compiling /home/slam/Desktop/Ball_Tracking/ros2_ws/install/ball_tracking_pkg/lib/python3.10/site-packages/ball_tracking_pkg/__init__.py to __init__.cpython-310.pyc\n'}
+[5.932525] (ball_tracking_pkg) StdoutLine: {'line': b'byte-compiling /home/slam/Desktop/Ball_Tracking/ros2_ws/install/ball_tracking_pkg/lib/python3.10/site-packages/ball_tracking_pkg/QBot.py to QBot.cpython-310.pyc\n'}
+[5.939315] (ball_tracking_pkg) StdoutLine: {'line': b'byte-compiling /home/slam/Desktop/Ball_Tracking/ros2_ws/install/ball_tracking_pkg/lib/python3.10/site-packages/ball_tracking_pkg/test_kobuki.py to test_kobuki.cpython-310.pyc\n'}
+[5.943119] (ball_tracking_pkg) StdoutLine: {'line': b'byte-compiling /home/slam/Desktop/Ball_Tracking/ros2_ws/install/ball_tracking_pkg/lib/python3.10/site-packages/ball_tracking_pkg/DataFieldTypes.py to DataFieldTypes.cpython-310.pyc\n'}
+[5.945754] (ball_tracking_pkg) StdoutLine: {'line': b'running install_data\n'}
+[5.947252] (-) TimerEvent: {}
+[5.949401] (ball_tracking_pkg) StdoutLine: {'line': b'creating /home/slam/Desktop/Ball_Tracking/ros2_ws/install/ball_tracking_pkg/share/ament_index\n'}
+[5.950586] (ball_tracking_pkg) StdoutLine: {'line': b'creating /home/slam/Desktop/Ball_Tracking/ros2_ws/install/ball_tracking_pkg/share/ament_index/resource_index\n'}
+[5.951941] (ball_tracking_pkg) StdoutLine: {'line': b'creating /home/slam/Desktop/Ball_Tracking/ros2_ws/install/ball_tracking_pkg/share/ament_index/resource_index/packages\n'}
+[5.953799] (ball_tracking_pkg) StdoutLine: {'line': b'copying resource/ball_tracking_pkg -> /home/slam/Desktop/Ball_Tracking/ros2_ws/install/ball_tracking_pkg/share/ament_index/resource_index/packages\n'}
+[5.955117] (ball_tracking_pkg) StdoutLine: {'line': b'copying package.xml -> /home/slam/Desktop/Ball_Tracking/ros2_ws/install/ball_tracking_pkg/share/ball_tracking_pkg\n'}
+[5.956168] (ball_tracking_pkg) StdoutLine: {'line': b'creating /home/slam/Desktop/Ball_Tracking/ros2_ws/install/ball_tracking_pkg/share/ball_tracking_pkg/launch\n'}
+[5.957445] (ball_tracking_pkg) StdoutLine: {'line': b'copying launch/tracker_launch.py -> /home/slam/Desktop/Ball_Tracking/ros2_ws/install/ball_tracking_pkg/share/ball_tracking_pkg/launch\n'}
+[5.958715] (ball_tracking_pkg) StdoutLine: {'line': b'running install_egg_info\n'}
+[5.968908] (ball_tracking_pkg) StdoutLine: {'line': b'Copying ../../build/ball_tracking_pkg/ball_tracking_pkg.egg-info to /home/slam/Desktop/Ball_Tracking/ros2_ws/install/ball_tracking_pkg/lib/python3.10/site-packages/ball_tracking_pkg-0.0.0-py3.10.egg-info\n'}
+[5.981832] (ball_tracking_pkg) StdoutLine: {'line': b'running install_scripts\n'}
+[6.047489] (-) TimerEvent: {}
+[6.087539] (ball_tracking_pkg) StdoutLine: {'line': b'Installing control_node script to /home/slam/Desktop/Ball_Tracking/ros2_ws/install/ball_tracking_pkg/lib/ball_tracking_pkg\n'}
+[6.088404] (ball_tracking_pkg) StdoutLine: {'line': b'Installing vision_node script to /home/slam/Desktop/Ball_Tracking/ros2_ws/install/ball_tracking_pkg/lib/ball_tracking_pkg\n'}
+[6.090305] (ball_tracking_pkg) StdoutLine: {'line': b"writing list of installed files to '/home/slam/Desktop/Ball_Tracking/ros2_ws/build/ball_tracking_pkg/install.log'\n"}
+[6.147961] (-) TimerEvent: {}
+[6.245923] (ball_tracking_pkg) CommandEnded: {'returncode': 0}
+[6.251526] (-) TimerEvent: {}
+[6.332424] (ball_tracking_pkg) JobEnded: {'identifier': 'ball_tracking_pkg', 'rc': 0}
+[6.351785] (-) TimerEvent: {}
+[6.403004] (kinect_ros2) StdoutLine: {'line': b'-- Found rclcpp_components: 16.0.19 (/opt/ros/humble/share/rclcpp_components/cmake)\n'}
+[6.451945] (-) TimerEvent: {}
+[6.552645] (-) TimerEvent: {}
+[6.653415] (-) TimerEvent: {}
+[6.754107] (-) TimerEvent: {}
+[6.854797] (-) TimerEvent: {}
+[6.955469] (-) TimerEvent: {}
+[7.056139] (-) TimerEvent: {}
+[7.094829] (kinect_ros2) StdoutLine: {'line': b'-- Found rosidl_generator_c: 3.1.8 (/opt/ros/humble/share/rosidl_generator_c/cmake)\n'}
+[7.153488] (kinect_ros2) StdoutLine: {'line': b'-- Found rosidl_adapter: 3.1.8 (/opt/ros/humble/share/rosidl_adapter/cmake)\n'}
+[7.156316] (-) TimerEvent: {}
+[7.239654] (kinect_ros2) StdoutLine: {'line': b'-- Found rosidl_generator_cpp: 3.1.8 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)\n'}
+[7.256515] (-) TimerEvent: {}
+[7.351103] (kinect_ros2) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[7.356684] (-) TimerEvent: {}
+[7.456245] (kinect_ros2) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[7.456792] (-) TimerEvent: {}
+[7.557418] (-) TimerEvent: {}
+[7.658143] (-) TimerEvent: {}
+[7.759111] (-) TimerEvent: {}
+[7.859974] (-) TimerEvent: {}
+[7.960752] (-) TimerEvent: {}
+[8.006166] (kinect_ros2) StdoutLine: {'line': b'-- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)\n'}
+[8.039185] (kinect_ros2) StdoutLine: {'line': b'-- Found rmw_fastrtps_cpp: 6.2.10 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)\n'}
+[8.060969] (-) TimerEvent: {}
+[8.161655] (-) TimerEvent: {}
+[8.262528] (-) TimerEvent: {}
+[8.363319] (-) TimerEvent: {}
+[8.464059] (-) TimerEvent: {}
+[8.564774] (-) TimerEvent: {}
+[8.666010] (-) TimerEvent: {}
+[8.766821] (-) TimerEvent: {}
+[8.781242] (kinect_ros2) StdoutLine: {'line': b'-- Found OpenSSL: /usr/lib/aarch64-linux-gnu/libcrypto.so (found version "3.0.2")  \n'}
+[8.867005] (-) TimerEvent: {}
+[8.967686] (-) TimerEvent: {}
+[9.068419] (-) TimerEvent: {}
+[9.070261] (kinect_ros2) StdoutLine: {'line': b'-- Found FastRTPS: /opt/ros/humble/include  \n'}
+[9.168607] (-) TimerEvent: {}
+[9.269326] (-) TimerEvent: {}
+[9.370048] (-) TimerEvent: {}
+[9.470734] (-) TimerEvent: {}
+[9.525596] (kinect_ros2) StdoutLine: {'line': b"-- Using RMW implementation 'rmw_fastrtps_cpp' as default\n"}
+[9.570919] (-) TimerEvent: {}
+[9.630568] (kinect_ros2) StdoutLine: {'line': b'-- Looking for pthread.h\n'}
+[9.671173] (-) TimerEvent: {}
+[9.771991] (-) TimerEvent: {}
+[9.872921] (-) TimerEvent: {}
+[9.973707] (-) TimerEvent: {}
+[10.057548] (kinect_ros2) StdoutLine: {'line': b'-- Looking for pthread.h - found\n'}
+[10.059352] (kinect_ros2) StdoutLine: {'line': b'-- Performing Test CMAKE_HAVE_LIBC_PTHREAD\n'}
+[10.073894] (-) TimerEvent: {}
+[10.174649] (-) TimerEvent: {}
+[10.275686] (-) TimerEvent: {}
+[10.377116] (-) TimerEvent: {}
+[10.448237] (kinect_ros2) StdoutLine: {'line': b'-- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success\n'}
+[10.453585] (kinect_ros2) StdoutLine: {'line': b'-- Found Threads: TRUE  \n'}
+[10.477280] (-) TimerEvent: {}
+[10.578050] (-) TimerEvent: {}
+[10.679160] (-) TimerEvent: {}
+[10.780485] (-) TimerEvent: {}
+[10.851461] (kinect_ros2) StdoutLine: {'line': b'-- Found libfreenect: /usr/lib/aarch64-linux-gnu/libfreenect.so  \n'}
+[10.880711] (-) TimerEvent: {}
+[10.926081] (kinect_ros2) StdoutLine: {'line': b'-- Found OpenCV: /usr (found version "4.5.4") \n'}
+[10.948617] (kinect_ros2) StdoutLine: {'line': b'-- Found sensor_msgs: 4.9.1 (/opt/ros/humble/share/sensor_msgs/cmake)\n'}
+[10.980923] (-) TimerEvent: {}
+[11.081646] (-) TimerEvent: {}
+[11.172971] (kinect_ros2) StdoutLine: {'line': b'-- Found cv_bridge: 3.2.1 (/opt/ros/humble/share/cv_bridge/cmake)\n'}
+[11.181839] (-) TimerEvent: {}
+[11.208127] (kinect_ros2) StdoutLine: {'line': b'-- Found image_transport: 3.1.12 (/opt/ros/humble/share/image_transport/cmake)\n'}
+[11.282039] (-) TimerEvent: {}
+[11.382718] (-) TimerEvent: {}
+[11.483429] (-) TimerEvent: {}
+[11.551055] (kinect_ros2) StdoutLine: {'line': b'-- Found depth_image_proc: 3.0.9 (/opt/ros/humble/share/depth_image_proc/cmake)\n'}
+[11.583684] (-) TimerEvent: {}
+[11.684692] (-) TimerEvent: {}
+[11.785661] (-) TimerEvent: {}
+[11.886460] (-) TimerEvent: {}
+[11.987365] (-) TimerEvent: {}
+[12.088569] (-) TimerEvent: {}
+[12.189282] (-) TimerEvent: {}
+[12.289971] (-) TimerEvent: {}
+[12.390707] (-) TimerEvent: {}
+[12.490283] (kinect_ros2) StdoutLine: {'line': b'-- Found camera_info_manager: 3.1.12 (/opt/ros/humble/share/camera_info_manager/cmake)\n'}
+[12.490817] (-) TimerEvent: {}
+[12.591419] (-) TimerEvent: {}
+[12.692165] (-) TimerEvent: {}
+[12.793040] (-) TimerEvent: {}
+[12.893991] (-) TimerEvent: {}
+[12.990331] (kinect_ros2) StdoutLine: {'line': b'-- Configuring done\n'}
+[12.994195] (-) TimerEvent: {}
+[13.095356] (-) TimerEvent: {}
+[13.192481] (kinect_ros2) StdoutLine: {'line': b'-- Generating done\n'}
+[13.195589] (-) TimerEvent: {}
+[13.243091] (kinect_ros2) StdoutLine: {'line': b'-- Build files have been written to: /home/slam/Desktop/Ball_Tracking/ros2_ws/build/kinect_ros2\n'}
+[13.296414] (-) TimerEvent: {}
+[13.361790] (kinect_ros2) CommandEnded: {'returncode': 0}
+[13.364552] (kinect_ros2) JobProgress: {'identifier': 'kinect_ros2', 'progress': 'build'}
+[13.364706] (kinect_ros2) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/slam/Desktop/Ball_Tracking/ros2_ws/build/kinect_ros2', '--', '-j4', '-l4'], 'cwd': '/home/slam/Desktop/Ball_Tracking/ros2_ws/build/kinect_ros2', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'slam'), ('LC_TIME', 'si_LK'), ('XDG_SESSION_TYPE', 'wayland'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/slam'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('LC_MONETARY', 'si_LK'), ('DBUS_STARTER_BUS_TYPE', 'session'), ('SYSTEMD_EXEC_PID', '1175'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus,guid=a5fa8ffa7431fb359d03019c6a32db7c'), ('COLORTERM', 'truecolor'), ('IM_CONFIG_PHASE', '1'), ('WAYLAND_DISPLAY', 'wayland-0'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'slam'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'slam'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/home/slam/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/slam:@/tmp/.ICE-unix/1175,unix/slam:/tmp/.ICE-unix/1175'), ('XDG_MENU_PREFIX', 'gnome-'), ('LC_ADDRESS', 'si_LK'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/cfcfb565_0ab5_4b27_874d_d9a18c016b23'), ('GNOME_SETUP_DISPLAY', ':1'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('LC_TELEPHONE', 'si_LK'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.9Y94Q3'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.108'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LC_NAME', 'si_LK'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'si_LK'), ('LC_IDENTIFICATION', 'si_LK'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/slam/Desktop/Ball_Tracking/ros2_ws/build/kinect_ros2'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('DBUS_STARTER_ADDRESS', 'unix:path=/run/user/1000/bus,guid=a5fa8ffa7431fb359d03019c6a32db7c'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('LC_NUMERIC', 'si_LK'), ('LC_PAPER', 'si_LK'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/opt/ros/humble')]), 'shell': False}
+[13.396593] (-) TimerEvent: {}
+[13.497893] (-) TimerEvent: {}
+[13.598700] (-) TimerEvent: {}
+[13.609148] (kinect_ros2) StdoutLine: {'line': b'[ 25%] \x1b[32mBuilding CXX object CMakeFiles/kinect_ros2_component.dir/src/kinect_ros2_component.cpp.o\x1b[0m\n'}
+[13.698943] (-) TimerEvent: {}
+[13.799837] (-) TimerEvent: {}
+[13.900534] (-) TimerEvent: {}
+[14.001252] (-) TimerEvent: {}
+[14.101992] (-) TimerEvent: {}
+[14.202722] (-) TimerEvent: {}
+[14.303462] (-) TimerEvent: {}
+[14.404175] (-) TimerEvent: {}
+[14.504936] (-) TimerEvent: {}
+[14.605653] (-) TimerEvent: {}
+[14.706490] (-) TimerEvent: {}
+[14.807464] (-) TimerEvent: {}
+[14.908356] (-) TimerEvent: {}
+[15.009175] (-) TimerEvent: {}
+[15.109972] (-) TimerEvent: {}
+[15.210821] (-) TimerEvent: {}
+[15.311655] (-) TimerEvent: {}
+[15.412404] (-) TimerEvent: {}
+[15.513169] (-) TimerEvent: {}
+[15.613920] (-) TimerEvent: {}
+[15.714705] (-) TimerEvent: {}
+[15.815413] (-) TimerEvent: {}
+[15.916198] (-) TimerEvent: {}
+[16.017013] (-) TimerEvent: {}
+[16.117697] (-) TimerEvent: {}
+[16.218544] (-) TimerEvent: {}
+[16.319607] (-) TimerEvent: {}
+[16.420323] (-) TimerEvent: {}
+[16.521054] (-) TimerEvent: {}
+[16.621950] (-) TimerEvent: {}
+[16.722878] (-) TimerEvent: {}
+[16.823677] (-) TimerEvent: {}
+[16.924465] (-) TimerEvent: {}
+[17.025262] (-) TimerEvent: {}
+[17.126240] (-) TimerEvent: {}
+[17.227041] (-) TimerEvent: {}
+[17.327877] (-) TimerEvent: {}
+[17.428635] (-) TimerEvent: {}
+[17.529419] (-) TimerEvent: {}
+[17.630151] (-) TimerEvent: {}
+[17.730988] (-) TimerEvent: {}
+[17.831792] (-) TimerEvent: {}
+[17.932694] (-) TimerEvent: {}
+[18.033525] (-) TimerEvent: {}
+[18.134326] (-) TimerEvent: {}
+[18.235176] (-) TimerEvent: {}
+[18.336109] (-) TimerEvent: {}
+[18.436917] (-) TimerEvent: {}
+[18.537689] (-) TimerEvent: {}
+[18.638516] (-) TimerEvent: {}
+[18.739262] (-) TimerEvent: {}
+[18.840037] (-) TimerEvent: {}
+[18.940785] (-) TimerEvent: {}
+[19.041693] (-) TimerEvent: {}
+[19.142472] (-) TimerEvent: {}
+[19.243331] (-) TimerEvent: {}
+[19.344198] (-) TimerEvent: {}
+[19.445093] (-) TimerEvent: {}
+[19.546041] (-) TimerEvent: {}
+[19.646892] (-) TimerEvent: {}
+[19.747706] (-) TimerEvent: {}
+[19.848622] (-) TimerEvent: {}
+[19.949455] (-) TimerEvent: {}
+[20.050308] (-) TimerEvent: {}
+[20.151222] (-) TimerEvent: {}
+[20.252121] (-) TimerEvent: {}
+[20.353182] (-) TimerEvent: {}
+[20.454063] (-) TimerEvent: {}
+[20.554844] (-) TimerEvent: {}
+[20.655637] (-) TimerEvent: {}
+[20.756384] (-) TimerEvent: {}
+[20.857186] (-) TimerEvent: {}
+[20.958050] (-) TimerEvent: {}
+[21.058878] (-) TimerEvent: {}
+[21.159672] (-) TimerEvent: {}
+[21.260530] (-) TimerEvent: {}
+[21.361410] (-) TimerEvent: {}
+[21.462331] (-) TimerEvent: {}
+[21.563234] (-) TimerEvent: {}
+[21.664188] (-) TimerEvent: {}
+[21.765090] (-) TimerEvent: {}
+[21.865950] (-) TimerEvent: {}
+[21.966893] (-) TimerEvent: {}
+[22.067905] (-) TimerEvent: {}
+[22.168982] (-) TimerEvent: {}
+[22.269915] (-) TimerEvent: {}
+[22.370815] (-) TimerEvent: {}
+[22.471652] (-) TimerEvent: {}
+[22.572460] (-) TimerEvent: {}
+[22.673240] (-) TimerEvent: {}
+[22.774064] (-) TimerEvent: {}
+[22.874807] (-) TimerEvent: {}
+[22.975572] (-) TimerEvent: {}
+[23.076330] (-) TimerEvent: {}
+[23.177235] (-) TimerEvent: {}
+[23.278257] (-) TimerEvent: {}
+[23.379142] (-) TimerEvent: {}
+[23.480561] (-) TimerEvent: {}
+[23.581569] (-) TimerEvent: {}
+[23.682436] (-) TimerEvent: {}
+[23.783298] (-) TimerEvent: {}
+[23.884177] (-) TimerEvent: {}
+[23.985087] (-) TimerEvent: {}
+[24.086082] (-) TimerEvent: {}
+[24.187015] (-) TimerEvent: {}
+[24.287867] (-) TimerEvent: {}
+[24.388630] (-) TimerEvent: {}
+[24.489472] (-) TimerEvent: {}
+[24.590293] (-) TimerEvent: {}
+[24.691038] (-) TimerEvent: {}
+[24.791827] (-) TimerEvent: {}
+[24.892594] (-) TimerEvent: {}
+[24.993504] (-) TimerEvent: {}
+[25.094398] (-) TimerEvent: {}
+[25.195300] (-) TimerEvent: {}
+[25.296222] (-) TimerEvent: {}
+[25.397442] (-) TimerEvent: {}
+[25.498269] (-) TimerEvent: {}
+[25.599113] (-) TimerEvent: {}
+[25.699962] (-) TimerEvent: {}
+[25.801173] (-) TimerEvent: {}
+[25.902588] (-) TimerEvent: {}
+[26.004129] (-) TimerEvent: {}
+[26.105408] (-) TimerEvent: {}
+[26.208022] (-) TimerEvent: {}
+[26.309100] (-) TimerEvent: {}
+[26.410010] (-) TimerEvent: {}
+[26.511008] (-) TimerEvent: {}
+[26.612063] (-) TimerEvent: {}
+[26.712966] (-) TimerEvent: {}
+[26.814072] (-) TimerEvent: {}
+[26.915138] (-) TimerEvent: {}
+[27.015934] (-) TimerEvent: {}
+[27.116730] (-) TimerEvent: {}
+[27.217532] (-) TimerEvent: {}
+[27.318338] (-) TimerEvent: {}
+[27.419381] (-) TimerEvent: {}
+[27.521494] (-) TimerEvent: {}
+[27.622395] (-) TimerEvent: {}
+[27.723245] (-) TimerEvent: {}
+[27.824111] (-) TimerEvent: {}
+[27.925008] (-) TimerEvent: {}
+[28.025739] (-) TimerEvent: {}
+[28.126521] (-) TimerEvent: {}
+[28.227282] (-) TimerEvent: {}
+[28.328062] (-) TimerEvent: {}
+[28.429026] (-) TimerEvent: {}
+[28.533150] (-) TimerEvent: {}
+[28.634003] (-) TimerEvent: {}
+[28.734859] (-) TimerEvent: {}
+[28.835669] (-) TimerEvent: {}
+[28.936457] (-) TimerEvent: {}
+[29.037286] (-) TimerEvent: {}
+[29.138071] (-) TimerEvent: {}
+[29.238937] (-) TimerEvent: {}
+[29.339688] (-) TimerEvent: {}
+[29.426536] (kinect_ros2) StderrLine: {'line': b'\x1b[01m\x1b[K/home/slam/Desktop/Ball_Tracking/ros2_ws/src/kinect_ros2/src/kinect_ros2_component.cpp:\x1b[m\x1b[K In static member function \xe2\x80\x98\x1b[01m\x1b[Kstatic void kinect_ros2::KinectRosComponent::depth_cb(freenect_device*, void*, uint32_t)\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[29.427456] (kinect_ros2) StderrLine: {'line': b'\x1b[01m\x1b[K/home/slam/Desktop/Ball_Tracking/ros2_ws/src/kinect_ros2/src/kinect_ros2_component.cpp:109:53:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kunused parameter \xe2\x80\x98\x1b[01m\x1b[Kdev\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter\x07-Wunused-parameter\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[29.428428] (kinect_ros2) StderrLine: {'line': b'  109 | void KinectRosComponent::depth_cb(\x1b[01;35m\x1b[Kfreenect_device * dev\x1b[m\x1b[K, void * depth_ptr, uint32_t timestamp)\n'}
+[29.429155] (kinect_ros2) StderrLine: {'line': b'      |                                   \x1b[01;35m\x1b[K~~~~~~~~~~~~~~~~~~^~~\x1b[m\x1b[K\n'}
+[29.429898] (kinect_ros2) StderrLine: {'line': b'\x1b[01m\x1b[K/home/slam/Desktop/Ball_Tracking/ros2_ws/src/kinect_ros2/src/kinect_ros2_component.cpp:109:85:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kunused parameter \xe2\x80\x98\x1b[01m\x1b[Ktimestamp\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter\x07-Wunused-parameter\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[29.430426] (kinect_ros2) StderrLine: {'line': b'  109 | ::depth_cb(freenect_device * dev, void * depth_ptr, \x1b[01;35m\x1b[Kuint32_t timestamp\x1b[m\x1b[K)\n'}
+[29.430823] (kinect_ros2) StderrLine: {'line': b'      |                                                     \x1b[01;35m\x1b[K~~~~~~~~~^~~~~~~~~\x1b[m\x1b[K\n'}
+[29.431178] (kinect_ros2) StderrLine: {'line': b'\n'}
+[29.431523] (kinect_ros2) StderrLine: {'line': b'\x1b[01m\x1b[K/home/slam/Desktop/Ball_Tracking/ros2_ws/src/kinect_ros2/src/kinect_ros2_component.cpp:\x1b[m\x1b[K In static member function \xe2\x80\x98\x1b[01m\x1b[Kstatic void kinect_ros2::KinectRosComponent::rgb_cb(freenect_device*, void*, uint32_t)\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[29.431873] (kinect_ros2) StderrLine: {'line': b'\x1b[01m\x1b[K/home/slam/Desktop/Ball_Tracking/ros2_ws/src/kinect_ros2/src/kinect_ros2_component.cpp:123:51:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kunused parameter \xe2\x80\x98\x1b[01m\x1b[Kdev\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter\x07-Wunused-parameter\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[29.432343] (kinect_ros2) StderrLine: {'line': b'  123 | void KinectRosComponent::rgb_cb(\x1b[01;35m\x1b[Kfreenect_device * dev\x1b[m\x1b[K, void * rgb_ptr, uint32_t timestamp)\n'}
+[29.432707] (kinect_ros2) StderrLine: {'line': b'      |                                 \x1b[01;35m\x1b[K~~~~~~~~~~~~~~~~~~^~~\x1b[m\x1b[K\n'}
+[29.433224] (kinect_ros2) StderrLine: {'line': b'\x1b[01m\x1b[K/home/slam/Desktop/Ball_Tracking/ros2_ws/src/kinect_ros2/src/kinect_ros2_component.cpp:123:81:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kunused parameter \xe2\x80\x98\x1b[01m\x1b[Ktimestamp\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter\x07-Wunused-parameter\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[29.433708] (kinect_ros2) StderrLine: {'line': b'  123 | nent::rgb_cb(freenect_device * dev, void * rgb_ptr, \x1b[01;35m\x1b[Kuint32_t timestamp\x1b[m\x1b[K)\n'}
+[29.434076] (kinect_ros2) StderrLine: {'line': b'      |                                                     \x1b[01;35m\x1b[K~~~~~~~~~^~~~~~~~~\x1b[m\x1b[K\n'}
+[29.434433] (kinect_ros2) StderrLine: {'line': b'\n'}
+[29.439899] (-) TimerEvent: {}
+[29.540748] (-) TimerEvent: {}
+[29.641583] (-) TimerEvent: {}
+[29.742335] (-) TimerEvent: {}
+[29.843112] (-) TimerEvent: {}
+[29.943946] (-) TimerEvent: {}
+[30.044950] (-) TimerEvent: {}
+[30.145856] (-) TimerEvent: {}
+[30.246581] (-) TimerEvent: {}
+[30.347387] (-) TimerEvent: {}
+[30.448231] (-) TimerEvent: {}
+[30.549320] (-) TimerEvent: {}
+[30.650080] (-) TimerEvent: {}
+[30.750900] (-) TimerEvent: {}
+[30.851832] (-) TimerEvent: {}
+[30.952606] (-) TimerEvent: {}
+[31.053425] (-) TimerEvent: {}
+[31.154194] (-) TimerEvent: {}
+[31.254970] (-) TimerEvent: {}
+[31.355750] (-) TimerEvent: {}
+[31.456532] (-) TimerEvent: {}
+[31.557340] (-) TimerEvent: {}
+[31.658133] (-) TimerEvent: {}
+[31.758976] (-) TimerEvent: {}
+[31.859782] (-) TimerEvent: {}
+[31.960743] (-) TimerEvent: {}
+[32.062060] (-) TimerEvent: {}
+[32.163180] (-) TimerEvent: {}
+[32.263947] (-) TimerEvent: {}
+[32.364677] (-) TimerEvent: {}
+[32.465470] (-) TimerEvent: {}
+[32.566228] (-) TimerEvent: {}
+[32.667004] (-) TimerEvent: {}
+[32.767784] (-) TimerEvent: {}
+[32.868575] (-) TimerEvent: {}
+[32.969386] (-) TimerEvent: {}
+[33.070122] (-) TimerEvent: {}
+[33.170879] (-) TimerEvent: {}
+[33.271730] (-) TimerEvent: {}
+[33.372549] (-) TimerEvent: {}
+[33.473326] (-) TimerEvent: {}
+[33.574135] (-) TimerEvent: {}
+[33.651824] (kinect_ros2) StdoutLine: {'line': b'[ 50%] \x1b[32m\x1b[1mLinking CXX shared library libkinect_ros2_component.so\x1b[0m\n'}
+[33.674386] (-) TimerEvent: {}
+[33.775355] (-) TimerEvent: {}
+[33.876275] (-) TimerEvent: {}
+[33.977343] (-) TimerEvent: {}
+[34.078475] (-) TimerEvent: {}
+[34.179573] (-) TimerEvent: {}
+[34.280458] (-) TimerEvent: {}
+[34.381475] (-) TimerEvent: {}
+[34.482702] (-) TimerEvent: {}
+[34.583762] (-) TimerEvent: {}
+[34.684712] (-) TimerEvent: {}
+[34.785670] (-) TimerEvent: {}
+[34.886579] (-) TimerEvent: {}
+[34.987459] (-) TimerEvent: {}
+[35.088280] (-) TimerEvent: {}
+[35.147252] (kinect_ros2) StdoutLine: {'line': b'[ 50%] Built target kinect_ros2_component\n'}
+[35.188533] (-) TimerEvent: {}
+[35.243936] (kinect_ros2) StdoutLine: {'line': b'[ 75%] \x1b[32mBuilding CXX object CMakeFiles/kinect_ros2_node.dir/src/kinect_ros2_node.cpp.o\x1b[0m\n'}
+[35.288805] (-) TimerEvent: {}
+[35.389646] (-) TimerEvent: {}
+[35.490308] (-) TimerEvent: {}
+[35.590976] (-) TimerEvent: {}
+[35.691671] (-) TimerEvent: {}
+[35.792408] (-) TimerEvent: {}
+[35.893119] (-) TimerEvent: {}
+[35.993917] (-) TimerEvent: {}
+[36.094910] (-) TimerEvent: {}
+[36.195727] (-) TimerEvent: {}
+[36.296478] (-) TimerEvent: {}
+[36.397347] (-) TimerEvent: {}
+[36.498325] (-) TimerEvent: {}
+[36.599023] (-) TimerEvent: {}
+[36.699815] (-) TimerEvent: {}
+[36.800543] (-) TimerEvent: {}
+[36.901313] (-) TimerEvent: {}
+[37.002014] (-) TimerEvent: {}
+[37.102700] (-) TimerEvent: {}
+[37.203416] (-) TimerEvent: {}
+[37.304184] (-) TimerEvent: {}
+[37.405012] (-) TimerEvent: {}
+[37.505831] (-) TimerEvent: {}
+[37.606589] (-) TimerEvent: {}
+[37.707360] (-) TimerEvent: {}
+[37.808200] (-) TimerEvent: {}
+[37.909053] (-) TimerEvent: {}
+[38.009799] (-) TimerEvent: {}
+[38.110556] (-) TimerEvent: {}
+[38.211310] (-) TimerEvent: {}
+[38.312139] (-) TimerEvent: {}
+[38.413091] (-) TimerEvent: {}
+[38.513917] (-) TimerEvent: {}
+[38.614749] (-) TimerEvent: {}
+[38.715623] (-) TimerEvent: {}
+[38.816465] (-) TimerEvent: {}
+[38.917265] (-) TimerEvent: {}
+[39.018016] (-) TimerEvent: {}
+[39.118791] (-) TimerEvent: {}
+[39.219608] (-) TimerEvent: {}
+[39.320493] (-) TimerEvent: {}
+[39.421308] (-) TimerEvent: {}
+[39.522204] (-) TimerEvent: {}
+[39.622994] (-) TimerEvent: {}
+[39.723840] (-) TimerEvent: {}
+[39.824690] (-) TimerEvent: {}
+[39.925495] (-) TimerEvent: {}
+[40.026253] (-) TimerEvent: {}
+[40.127042] (-) TimerEvent: {}
+[40.227933] (-) TimerEvent: {}
+[40.328847] (-) TimerEvent: {}
+[40.429823] (-) TimerEvent: {}
+[40.530706] (-) TimerEvent: {}
+[40.631463] (-) TimerEvent: {}
+[40.732357] (-) TimerEvent: {}
+[40.833110] (-) TimerEvent: {}
+[40.933914] (-) TimerEvent: {}
+[41.034726] (-) TimerEvent: {}
+[41.135509] (-) TimerEvent: {}
+[41.236340] (-) TimerEvent: {}
+[41.337143] (-) TimerEvent: {}
+[41.437921] (-) TimerEvent: {}
+[41.538703] (-) TimerEvent: {}
+[41.639489] (-) TimerEvent: {}
+[41.740346] (-) TimerEvent: {}
+[41.841124] (-) TimerEvent: {}
+[41.941867] (-) TimerEvent: {}
+[42.042605] (-) TimerEvent: {}
+[42.143353] (-) TimerEvent: {}
+[42.244133] (-) TimerEvent: {}
+[42.344988] (-) TimerEvent: {}
+[42.445914] (-) TimerEvent: {}
+[42.546836] (-) TimerEvent: {}
+[42.647604] (-) TimerEvent: {}
+[42.748409] (-) TimerEvent: {}
+[42.849218] (-) TimerEvent: {}
+[42.950029] (-) TimerEvent: {}
+[43.050787] (-) TimerEvent: {}
+[43.151634] (-) TimerEvent: {}
+[43.252471] (-) TimerEvent: {}
+[43.353309] (-) TimerEvent: {}
+[43.454063] (-) TimerEvent: {}
+[43.554830] (-) TimerEvent: {}
+[43.655614] (-) TimerEvent: {}
+[43.756516] (-) TimerEvent: {}
+[43.857339] (-) TimerEvent: {}
+[43.958137] (-) TimerEvent: {}
+[44.058946] (-) TimerEvent: {}
+[44.159714] (-) TimerEvent: {}
+[44.260681] (-) TimerEvent: {}
+[44.361801] (-) TimerEvent: {}
+[44.462670] (-) TimerEvent: {}
+[44.563538] (-) TimerEvent: {}
+[44.664349] (-) TimerEvent: {}
+[44.765094] (-) TimerEvent: {}
+[44.866010] (-) TimerEvent: {}
+[44.967301] (-) TimerEvent: {}
+[45.068131] (-) TimerEvent: {}
+[45.168995] (-) TimerEvent: {}
+[45.269767] (-) TimerEvent: {}
+[45.370539] (-) TimerEvent: {}
+[45.471372] (-) TimerEvent: {}
+[45.572223] (-) TimerEvent: {}
+[45.673042] (-) TimerEvent: {}
+[45.773820] (-) TimerEvent: {}
+[45.874636] (-) TimerEvent: {}
+[45.975484] (-) TimerEvent: {}
+[46.076371] (-) TimerEvent: {}
+[46.177204] (-) TimerEvent: {}
+[46.277974] (-) TimerEvent: {}
+[46.378767] (-) TimerEvent: {}
+[46.479640] (-) TimerEvent: {}
+[46.580582] (-) TimerEvent: {}
+[46.681388] (-) TimerEvent: {}
+[46.782154] (-) TimerEvent: {}
+[46.882911] (-) TimerEvent: {}
+[46.983704] (-) TimerEvent: {}
+[47.084504] (-) TimerEvent: {}
+[47.185329] (-) TimerEvent: {}
+[47.286102] (-) TimerEvent: {}
+[47.386896] (-) TimerEvent: {}
+[47.487687] (-) TimerEvent: {}
+[47.588530] (-) TimerEvent: {}
+[47.689349] (-) TimerEvent: {}
+[47.790101] (-) TimerEvent: {}
+[47.890861] (-) TimerEvent: {}
+[47.991644] (-) TimerEvent: {}
+[48.092499] (-) TimerEvent: {}
+[48.193341] (-) TimerEvent: {}
+[48.294092] (-) TimerEvent: {}
+[48.394870] (-) TimerEvent: {}
+[48.495666] (-) TimerEvent: {}
+[48.596619] (-) TimerEvent: {}
+[48.697538] (-) TimerEvent: {}
+[48.798282] (-) TimerEvent: {}
+[48.899073] (-) TimerEvent: {}
+[48.999866] (-) TimerEvent: {}
+[49.100782] (-) TimerEvent: {}
+[49.201583] (-) TimerEvent: {}
+[49.302373] (-) TimerEvent: {}
+[49.403154] (-) TimerEvent: {}
+[49.503928] (-) TimerEvent: {}
+[49.604771] (-) TimerEvent: {}
+[49.705575] (-) TimerEvent: {}
+[49.806386] (-) TimerEvent: {}
+[49.907162] (-) TimerEvent: {}
+[50.007945] (-) TimerEvent: {}
+[50.108838] (-) TimerEvent: {}
+[50.209655] (-) TimerEvent: {}
+[50.310394] (-) TimerEvent: {}
+[50.411159] (-) TimerEvent: {}
+[50.511941] (-) TimerEvent: {}
+[50.612791] (-) TimerEvent: {}
+[50.713682] (-) TimerEvent: {}
+[50.814563] (-) TimerEvent: {}
+[50.915325] (-) TimerEvent: {}
+[51.016110] (-) TimerEvent: {}
+[51.117019] (-) TimerEvent: {}
+[51.217769] (-) TimerEvent: {}
+[51.318543] (-) TimerEvent: {}
+[51.419357] (-) TimerEvent: {}
+[51.520450] (-) TimerEvent: {}
+[51.621610] (-) TimerEvent: {}
+[51.723521] (-) TimerEvent: {}
+[51.824375] (-) TimerEvent: {}
+[51.925214] (-) TimerEvent: {}
+[52.025952] (-) TimerEvent: {}
+[52.126723] (-) TimerEvent: {}
+[52.227477] (-) TimerEvent: {}
+[52.328316] (-) TimerEvent: {}
+[52.429164] (-) TimerEvent: {}
+[52.530045] (-) TimerEvent: {}
+[52.630848] (-) TimerEvent: {}
+[52.731605] (-) TimerEvent: {}
+[52.832535] (-) TimerEvent: {}
+[52.933439] (-) TimerEvent: {}
+[53.034139] (-) TimerEvent: {}
+[53.134877] (-) TimerEvent: {}
+[53.167137] (kinect_ros2) StdoutLine: {'line': b'[100%] \x1b[32m\x1b[1mLinking CXX executable kinect_ros2_node\x1b[0m\n'}
+[53.235083] (-) TimerEvent: {}
+[53.335839] (-) TimerEvent: {}
+[53.436718] (-) TimerEvent: {}
+[53.537730] (-) TimerEvent: {}
+[53.638665] (-) TimerEvent: {}
+[53.739531] (-) TimerEvent: {}
+[53.840577] (-) TimerEvent: {}
+[53.941643] (-) TimerEvent: {}
+[54.042414] (-) TimerEvent: {}
+[54.143130] (-) TimerEvent: {}
+[54.243862] (-) TimerEvent: {}
+[54.344800] (-) TimerEvent: {}
+[54.445944] (-) TimerEvent: {}
+[54.546916] (-) TimerEvent: {}
+[54.647957] (-) TimerEvent: {}
+[54.748803] (-) TimerEvent: {}
+[54.849818] (-) TimerEvent: {}
+[54.950736] (-) TimerEvent: {}
+[55.051548] (-) TimerEvent: {}
+[55.152355] (-) TimerEvent: {}
+[55.253316] (-) TimerEvent: {}
+[55.354205] (-) TimerEvent: {}
+[55.455108] (-) TimerEvent: {}
+[55.556099] (-) TimerEvent: {}
+[55.570856] (kinect_ros2) StdoutLine: {'line': b'[100%] Built target kinect_ros2_node\n'}
+[55.619193] (kinect_ros2) CommandEnded: {'returncode': 0}
+[55.621867] (kinect_ros2) JobProgress: {'identifier': 'kinect_ros2', 'progress': 'install'}
+[55.659185] (kinect_ros2) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/slam/Desktop/Ball_Tracking/ros2_ws/build/kinect_ros2'], 'cwd': '/home/slam/Desktop/Ball_Tracking/ros2_ws/build/kinect_ros2', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'slam'), ('LC_TIME', 'si_LK'), ('XDG_SESSION_TYPE', 'wayland'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/slam'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('LC_MONETARY', 'si_LK'), ('DBUS_STARTER_BUS_TYPE', 'session'), ('SYSTEMD_EXEC_PID', '1175'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus,guid=a5fa8ffa7431fb359d03019c6a32db7c'), ('COLORTERM', 'truecolor'), ('IM_CONFIG_PHASE', '1'), ('WAYLAND_DISPLAY', 'wayland-0'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'slam'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'slam'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/home/slam/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/slam:@/tmp/.ICE-unix/1175,unix/slam:/tmp/.ICE-unix/1175'), ('XDG_MENU_PREFIX', 'gnome-'), ('LC_ADDRESS', 'si_LK'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/cfcfb565_0ab5_4b27_874d_d9a18c016b23'), ('GNOME_SETUP_DISPLAY', ':1'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('LC_TELEPHONE', 'si_LK'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.9Y94Q3'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.108'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LC_NAME', 'si_LK'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'si_LK'), ('LC_IDENTIFICATION', 'si_LK'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/slam/Desktop/Ball_Tracking/ros2_ws/build/kinect_ros2'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('DBUS_STARTER_ADDRESS', 'unix:path=/run/user/1000/bus,guid=a5fa8ffa7431fb359d03019c6a32db7c'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('LC_NUMERIC', 'si_LK'), ('LC_PAPER', 'si_LK'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/opt/ros/humble')]), 'shell': False}
+[55.666223] (-) TimerEvent: {}
+[55.693803] (kinect_ros2) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[55.694598] (kinect_ros2) StdoutLine: {'line': b'-- Installing: /home/slam/Desktop/Ball_Tracking/ros2_ws/install/kinect_ros2/lib/libkinect_ros2_component.so\n'}
+[55.702501] (kinect_ros2) StdoutLine: {'line': b'-- Set runtime path of "/home/slam/Desktop/Ball_Tracking/ros2_ws/install/kinect_ros2/lib/libkinect_ros2_component.so" to ""\n'}
+[55.703866] (kinect_ros2) StdoutLine: {'line': b'-- Installing: /home/slam/Desktop/Ball_Tracking/ros2_ws/install/kinect_ros2/lib/kinect_ros2/kinect_ros2_node\n'}
+[55.708922] (kinect_ros2) StdoutLine: {'line': b'-- Set runtime path of "/home/slam/Desktop/Ball_Tracking/ros2_ws/install/kinect_ros2/lib/kinect_ros2/kinect_ros2_node" to ""\n'}
+[55.709463] (kinect_ros2) StdoutLine: {'line': b'-- Installing: /home/slam/Desktop/Ball_Tracking/ros2_ws/install/kinect_ros2/share/kinect_ros2/cfg\n'}
+[55.711032] (kinect_ros2) StdoutLine: {'line': b'-- Installing: /home/slam/Desktop/Ball_Tracking/ros2_ws/install/kinect_ros2/share/kinect_ros2/cfg/calibration_rgb.yaml\n'}
+[55.713184] (kinect_ros2) StdoutLine: {'line': b'-- Installing: /home/slam/Desktop/Ball_Tracking/ros2_ws/install/kinect_ros2/share/kinect_ros2/cfg/calibration_depth.yaml\n'}
+[55.715199] (kinect_ros2) StdoutLine: {'line': b'-- Installing: /home/slam/Desktop/Ball_Tracking/ros2_ws/install/kinect_ros2/share/kinect_ros2/launch\n'}
+[55.717043] (kinect_ros2) StdoutLine: {'line': b'-- Installing: /home/slam/Desktop/Ball_Tracking/ros2_ws/install/kinect_ros2/share/kinect_ros2/launch/pointcloud.launch.py\n'}
+[55.718931] (kinect_ros2) StdoutLine: {'line': b'-- Installing: /home/slam/Desktop/Ball_Tracking/ros2_ws/install/kinect_ros2/share/kinect_ros2/launch/showimage.launch.py\n'}
+[55.720596] (kinect_ros2) StdoutLine: {'line': b'-- Installing: /home/slam/Desktop/Ball_Tracking/ros2_ws/install/kinect_ros2/share/kinect_ros2/rviz\n'}
+[55.722026] (kinect_ros2) StdoutLine: {'line': b'-- Installing: /home/slam/Desktop/Ball_Tracking/ros2_ws/install/kinect_ros2/share/kinect_ros2/rviz/pointcloud.rviz\n'}
+[55.724773] (kinect_ros2) StdoutLine: {'line': b'-- Installing: /home/slam/Desktop/Ball_Tracking/ros2_ws/install/kinect_ros2/share/ament_index/resource_index/package_run_dependencies/kinect_ros2\n'}
+[55.726988] (kinect_ros2) StdoutLine: {'line': b'-- Installing: /home/slam/Desktop/Ball_Tracking/ros2_ws/install/kinect_ros2/share/ament_index/resource_index/parent_prefix_path/kinect_ros2\n'}
+[55.729094] (kinect_ros2) StdoutLine: {'line': b'-- Installing: /home/slam/Desktop/Ball_Tracking/ros2_ws/install/kinect_ros2/share/kinect_ros2/environment/ament_prefix_path.sh\n'}
+[55.731064] (kinect_ros2) StdoutLine: {'line': b'-- Installing: /home/slam/Desktop/Ball_Tracking/ros2_ws/install/kinect_ros2/share/kinect_ros2/environment/ament_prefix_path.dsv\n'}
+[55.732644] (kinect_ros2) StdoutLine: {'line': b'-- Installing: /home/slam/Desktop/Ball_Tracking/ros2_ws/install/kinect_ros2/share/kinect_ros2/environment/path.sh\n'}
+[55.733997] (kinect_ros2) StdoutLine: {'line': b'-- Installing: /home/slam/Desktop/Ball_Tracking/ros2_ws/install/kinect_ros2/share/kinect_ros2/environment/path.dsv\n'}
+[55.735264] (kinect_ros2) StdoutLine: {'line': b'-- Installing: /home/slam/Desktop/Ball_Tracking/ros2_ws/install/kinect_ros2/share/kinect_ros2/local_setup.bash\n'}
+[55.736537] (kinect_ros2) StdoutLine: {'line': b'-- Installing: /home/slam/Desktop/Ball_Tracking/ros2_ws/install/kinect_ros2/share/kinect_ros2/local_setup.sh\n'}
+[55.737937] (kinect_ros2) StdoutLine: {'line': b'-- Installing: /home/slam/Desktop/Ball_Tracking/ros2_ws/install/kinect_ros2/share/kinect_ros2/local_setup.zsh\n'}
+[55.739284] (kinect_ros2) StdoutLine: {'line': b'-- Installing: /home/slam/Desktop/Ball_Tracking/ros2_ws/install/kinect_ros2/share/kinect_ros2/local_setup.dsv\n'}
+[55.740436] (kinect_ros2) StdoutLine: {'line': b'-- Installing: /home/slam/Desktop/Ball_Tracking/ros2_ws/install/kinect_ros2/share/kinect_ros2/package.dsv\n'}
+[55.742157] (kinect_ros2) StdoutLine: {'line': b'-- Installing: /home/slam/Desktop/Ball_Tracking/ros2_ws/install/kinect_ros2/share/ament_index/resource_index/packages/kinect_ros2\n'}
+[55.743769] (kinect_ros2) StdoutLine: {'line': b'-- Installing: /home/slam/Desktop/Ball_Tracking/ros2_ws/install/kinect_ros2/share/ament_index/resource_index/rclcpp_components/kinect_ros2\n'}
+[55.745480] (kinect_ros2) StdoutLine: {'line': b'-- Installing: /home/slam/Desktop/Ball_Tracking/ros2_ws/install/kinect_ros2/share/kinect_ros2/cmake/kinect_ros2Config.cmake\n'}
+[55.747015] (kinect_ros2) StdoutLine: {'line': b'-- Installing: /home/slam/Desktop/Ball_Tracking/ros2_ws/install/kinect_ros2/share/kinect_ros2/cmake/kinect_ros2Config-version.cmake\n'}
+[55.748290] (kinect_ros2) StdoutLine: {'line': b'-- Installing: /home/slam/Desktop/Ball_Tracking/ros2_ws/install/kinect_ros2/share/kinect_ros2/package.xml\n'}
+[55.754336] (kinect_ros2) CommandEnded: {'returncode': 0}
+[55.766793] (-) TimerEvent: {}
+[55.847818] (kinect_ros2) JobEnded: {'identifier': 'kinect_ros2', 'rc': 0}
+[55.850995] (-) EventReactorShutdown: {}

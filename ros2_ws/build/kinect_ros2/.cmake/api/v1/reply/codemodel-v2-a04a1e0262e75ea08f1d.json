@@ -1,0 +1,88 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"hasInstallRule" : true,
+					"jsonFile" : "directory-.-211bccbaac375a0884b5.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.12"
+					},
+					"projectIndex" : 0,
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3
+					]
+				}
+			],
+			"name" : "",
+			"projects" : 
+			[
+				{
+					"directoryIndexes" : 
+					[
+						0
+					],
+					"name" : "kinect_ros2",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 0,
+					"id" : "kinect_ros2_component::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-kinect_ros2_component-5f205c1202868333592b.json",
+					"name" : "kinect_ros2_component",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "kinect_ros2_node::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-kinect_ros2_node-9964244d823c6e9ed8a5.json",
+					"name" : "kinect_ros2_node",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "kinect_ros2_uninstall::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-kinect_ros2_uninstall-6204ae23cc3db27c31d9.json",
+					"name" : "kinect_ros2_uninstall",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "uninstall::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-uninstall-e7d859ee63d6ea0c24ee.json",
+					"name" : "uninstall",
+					"projectIndex" : 0
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "/home/slam/Desktop/Ball_Tracking/ros2_ws/build/kinect_ros2",
+		"source" : "/home/slam/Desktop/Ball_Tracking/ros2_ws/src/kinect_ros2"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 3
+	}
+}
