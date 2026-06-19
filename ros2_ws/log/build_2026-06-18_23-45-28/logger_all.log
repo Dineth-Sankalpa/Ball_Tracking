@@ -1,0 +1,198 @@
+[1.701s] DEBUG:colcon:Command line arguments: ['/usr/bin/colcon', 'build']
+[1.702s] DEBUG:colcon:Parsed command line arguments: Namespace(log_base=None, log_level=None, verb_name='build', build_base='build', install_base='install', merge_install=False, symlink_install=False, test_result_base=None, continue_on_error=False, executor='parallel', parallel_workers=4, event_handlers=None, ignore_user_meta=False, metas=['./colcon.meta'], base_paths=['.'], packages_ignore=None, packages_ignore_regex=None, paths=None, packages_up_to=None, packages_up_to_regex=None, packages_above=None, packages_above_and_dependencies=None, packages_above_depth=None, packages_select_by_dep=None, packages_skip_by_dep=None, packages_skip_up_to=None, packages_select_build_failed=False, packages_skip_build_finished=False, packages_select_test_failures=False, packages_skip_test_passed=False, packages_select=None, packages_skip=None, packages_select_regex=None, packages_skip_regex=None, packages_start=None, packages_end=None, allow_overriding=[], cmake_args=None, cmake_target=None, cmake_target_skip_unavailable=False, cmake_clean_cache=False, cmake_clean_first=False, cmake_force_configure=False, ament_cmake_args=None, catkin_cmake_args=None, catkin_skip_building_tests=False, verb_parser=<colcon_defaults.argument_parser.defaults.DefaultArgumentsDecorator object at 0xffffb07e7e50>, verb_extension=<colcon_core.verb.build.BuildVerb object at 0xffffb09b9240>, main=<bound method BuildVerb.main of <colcon_core.verb.build.BuildVerb object at 0xffffb09b9240>>)
+[3.658s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) check parameters
+[3.659s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) check parameters
+[3.659s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) check parameters
+[3.659s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) check parameters
+[3.659s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) discover
+[3.660s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) discover
+[3.660s] INFO:colcon.colcon_core.package_discovery:Crawling recursively for packages in '/home/slam/Desktop/Ball_Tracking/ros2_ws'
+[3.661s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ignore', 'ignore_ament_install']
+[3.661s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore'
+[3.662s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore_ament_install'
+[3.662s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_pkg']
+[3.663s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_pkg'
+[3.663s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_meta']
+[3.663s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_meta'
+[3.664s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ros']
+[3.664s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ros'
+[3.751s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['cmake', 'python']
+[3.751s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'cmake'
+[3.751s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python'
+[3.752s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['python_setup_py']
+[3.752s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python_setup_py'
+[3.753s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extensions ['ignore', 'ignore_ament_install']
+[3.753s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extension 'ignore'
+[3.754s] Level 1:colcon.colcon_core.package_identification:_identify(build) ignored
+[3.755s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extensions ['ignore', 'ignore_ament_install']
+[3.755s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extension 'ignore'
+[3.756s] Level 1:colcon.colcon_core.package_identification:_identify(install) ignored
+[3.757s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extensions ['ignore', 'ignore_ament_install']
+[3.757s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extension 'ignore'
+[3.757s] Level 1:colcon.colcon_core.package_identification:_identify(log) ignored
+[3.758s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['ignore', 'ignore_ament_install']
+[3.758s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ignore'
+[3.759s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ignore_ament_install'
+[3.759s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['colcon_pkg']
+[3.759s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'colcon_pkg'
+[3.760s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['colcon_meta']
+[3.760s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'colcon_meta'
+[3.760s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['ros']
+[3.760s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ros'
+[3.761s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['cmake', 'python']
+[3.761s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'cmake'
+[3.762s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'python'
+[3.762s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['python_setup_py']
+[3.762s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'python_setup_py'
+[3.763s] Level 1:colcon.colcon_core.package_identification:_identify(src/ball_tracking_pkg) by extensions ['ignore', 'ignore_ament_install']
+[3.764s] Level 1:colcon.colcon_core.package_identification:_identify(src/ball_tracking_pkg) by extension 'ignore'
+[3.764s] Level 1:colcon.colcon_core.package_identification:_identify(src/ball_tracking_pkg) by extension 'ignore_ament_install'
+[3.764s] Level 1:colcon.colcon_core.package_identification:_identify(src/ball_tracking_pkg) by extensions ['colcon_pkg']
+[3.765s] Level 1:colcon.colcon_core.package_identification:_identify(src/ball_tracking_pkg) by extension 'colcon_pkg'
+[3.765s] Level 1:colcon.colcon_core.package_identification:_identify(src/ball_tracking_pkg) by extensions ['colcon_meta']
+[3.765s] Level 1:colcon.colcon_core.package_identification:_identify(src/ball_tracking_pkg) by extension 'colcon_meta'
+[3.765s] Level 1:colcon.colcon_core.package_identification:_identify(src/ball_tracking_pkg) by extensions ['ros']
+[3.766s] Level 1:colcon.colcon_core.package_identification:_identify(src/ball_tracking_pkg) by extension 'ros'
+[3.784s] DEBUG:colcon.colcon_core.package_identification:Package 'src/ball_tracking_pkg' with type 'ros.ament_python' and name 'ball_tracking_pkg'
+[3.786s] Level 1:colcon.colcon_core.package_identification:_identify(src/kinect_ros2) by extensions ['ignore', 'ignore_ament_install']
+[3.787s] Level 1:colcon.colcon_core.package_identification:_identify(src/kinect_ros2) by extension 'ignore'
+[3.788s] Level 1:colcon.colcon_core.package_identification:_identify(src/kinect_ros2) by extension 'ignore_ament_install'
+[3.788s] Level 1:colcon.colcon_core.package_identification:_identify(src/kinect_ros2) by extensions ['colcon_pkg']
+[3.788s] Level 1:colcon.colcon_core.package_identification:_identify(src/kinect_ros2) by extension 'colcon_pkg'
+[3.789s] Level 1:colcon.colcon_core.package_identification:_identify(src/kinect_ros2) by extensions ['colcon_meta']
+[3.789s] Level 1:colcon.colcon_core.package_identification:_identify(src/kinect_ros2) by extension 'colcon_meta'
+[3.789s] Level 1:colcon.colcon_core.package_identification:_identify(src/kinect_ros2) by extensions ['ros']
+[3.789s] Level 1:colcon.colcon_core.package_identification:_identify(src/kinect_ros2) by extension 'ros'
+[3.796s] DEBUG:colcon.colcon_core.package_identification:Package 'src/kinect_ros2' with type 'ros.ament_cmake' and name 'kinect_ros2'
+[3.797s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) using defaults
+[3.798s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) discover
+[3.799s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) using defaults
+[3.799s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) discover
+[3.799s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) using defaults
+[3.985s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) check parameters
+[3.986s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) discover
+[4.012s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 290 installed packages in /opt/ros/humble
+[4.089s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) using defaults
+[4.378s] Level 5:colcon.colcon_core.verb:set package 'ball_tracking_pkg' build argument 'cmake_args' from command line to 'None'
+[4.379s] Level 5:colcon.colcon_core.verb:set package 'ball_tracking_pkg' build argument 'cmake_target' from command line to 'None'
+[4.380s] Level 5:colcon.colcon_core.verb:set package 'ball_tracking_pkg' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[4.380s] Level 5:colcon.colcon_core.verb:set package 'ball_tracking_pkg' build argument 'cmake_clean_cache' from command line to 'False'
+[4.380s] Level 5:colcon.colcon_core.verb:set package 'ball_tracking_pkg' build argument 'cmake_clean_first' from command line to 'False'
+[4.380s] Level 5:colcon.colcon_core.verb:set package 'ball_tracking_pkg' build argument 'cmake_force_configure' from command line to 'False'
+[4.380s] Level 5:colcon.colcon_core.verb:set package 'ball_tracking_pkg' build argument 'ament_cmake_args' from command line to 'None'
+[4.380s] Level 5:colcon.colcon_core.verb:set package 'ball_tracking_pkg' build argument 'catkin_cmake_args' from command line to 'None'
+[4.380s] Level 5:colcon.colcon_core.verb:set package 'ball_tracking_pkg' build argument 'catkin_skip_building_tests' from command line to 'False'
+[4.381s] DEBUG:colcon.colcon_core.verb:Building package 'ball_tracking_pkg' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/slam/Desktop/Ball_Tracking/ros2_ws/build/ball_tracking_pkg', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/slam/Desktop/Ball_Tracking/ros2_ws/install/ball_tracking_pkg', 'merge_install': False, 'path': '/home/slam/Desktop/Ball_Tracking/ros2_ws/src/ball_tracking_pkg', 'symlink_install': False, 'test_result_base': None}
+[4.383s] Level 5:colcon.colcon_core.verb:set package 'kinect_ros2' build argument 'cmake_args' from command line to 'None'
+[4.383s] Level 5:colcon.colcon_core.verb:set package 'kinect_ros2' build argument 'cmake_target' from command line to 'None'
+[4.384s] Level 5:colcon.colcon_core.verb:set package 'kinect_ros2' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[4.384s] Level 5:colcon.colcon_core.verb:set package 'kinect_ros2' build argument 'cmake_clean_cache' from command line to 'False'
+[4.384s] Level 5:colcon.colcon_core.verb:set package 'kinect_ros2' build argument 'cmake_clean_first' from command line to 'False'
+[4.384s] Level 5:colcon.colcon_core.verb:set package 'kinect_ros2' build argument 'cmake_force_configure' from command line to 'False'
+[4.384s] Level 5:colcon.colcon_core.verb:set package 'kinect_ros2' build argument 'ament_cmake_args' from command line to 'None'
+[4.384s] Level 5:colcon.colcon_core.verb:set package 'kinect_ros2' build argument 'catkin_cmake_args' from command line to 'None'
+[4.384s] Level 5:colcon.colcon_core.verb:set package 'kinect_ros2' build argument 'catkin_skip_building_tests' from command line to 'False'
+[4.384s] DEBUG:colcon.colcon_core.verb:Building package 'kinect_ros2' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/slam/Desktop/Ball_Tracking/ros2_ws/build/kinect_ros2', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/slam/Desktop/Ball_Tracking/ros2_ws/install/kinect_ros2', 'merge_install': False, 'path': '/home/slam/Desktop/Ball_Tracking/ros2_ws/src/kinect_ros2', 'symlink_install': False, 'test_result_base': None}
+[4.385s] INFO:colcon.colcon_core.executor:Executing jobs using 'parallel' executor
+[4.389s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete
+[4.390s] INFO:colcon.colcon_ros.task.ament_python.build:Building ROS package in '/home/slam/Desktop/Ball_Tracking/ros2_ws/src/ball_tracking_pkg' with build type 'ament_python'
+[4.391s] Level 1:colcon.colcon_core.shell:create_environment_hook('ball_tracking_pkg', 'ament_prefix_path')
+[4.416s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_core.shell.bat': Not used on non-Windows systems
+[4.417s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/slam/Desktop/Ball_Tracking/ros2_ws/install/ball_tracking_pkg/share/ball_tracking_pkg/hook/ament_prefix_path.ps1'
+[4.428s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/slam/Desktop/Ball_Tracking/ros2_ws/install/ball_tracking_pkg/share/ball_tracking_pkg/hook/ament_prefix_path.dsv'
+[4.435s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/slam/Desktop/Ball_Tracking/ros2_ws/install/ball_tracking_pkg/share/ball_tracking_pkg/hook/ament_prefix_path.sh'
+[4.445s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[4.446s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[4.474s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/slam/Desktop/Ball_Tracking/ros2_ws/src/kinect_ros2' with build type 'ament_cmake'
+[4.475s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/slam/Desktop/Ball_Tracking/ros2_ws/src/kinect_ros2'
+[4.478s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[4.480s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[6.633s] INFO:colcon.colcon_core.task.python.build:Building Python package in '/home/slam/Desktop/Ball_Tracking/ros2_ws/src/ball_tracking_pkg'
+[6.634s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[6.635s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[6.681s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/slam/Desktop/Ball_Tracking/ros2_ws/build/kinect_ros2': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/slam/Desktop/Ball_Tracking/ros2_ws/build/kinect_ros2 -- -j4 -l4
+[7.908s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/slam/Desktop/Ball_Tracking/ros2_ws/build/kinect_ros2' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/slam/Desktop/Ball_Tracking/ros2_ws/build/kinect_ros2 -- -j4 -l4
+[7.972s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/slam/Desktop/Ball_Tracking/ros2_ws/build/kinect_ros2': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/slam/Desktop/Ball_Tracking/ros2_ws/build/kinect_ros2
+[8.086s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(kinect_ros2)
+[8.106s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/slam/Desktop/Ball_Tracking/ros2_ws/build/kinect_ros2' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/slam/Desktop/Ball_Tracking/ros2_ws/build/kinect_ros2
+[8.157s] Level 1:colcon.colcon_core.environment:checking '/home/slam/Desktop/Ball_Tracking/ros2_ws/install/kinect_ros2' for CMake module files
+[8.168s] Level 1:colcon.colcon_core.environment:checking '/home/slam/Desktop/Ball_Tracking/ros2_ws/install/kinect_ros2' for CMake config files
+[8.186s] Level 1:colcon.colcon_core.shell:create_environment_hook('kinect_ros2', 'cmake_prefix_path')
+[8.189s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/slam/Desktop/Ball_Tracking/ros2_ws/install/kinect_ros2/share/kinect_ros2/hook/cmake_prefix_path.ps1'
+[8.194s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/slam/Desktop/Ball_Tracking/ros2_ws/install/kinect_ros2/share/kinect_ros2/hook/cmake_prefix_path.dsv'
+[8.201s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/slam/Desktop/Ball_Tracking/ros2_ws/install/kinect_ros2/share/kinect_ros2/hook/cmake_prefix_path.sh'
+[8.210s] Level 1:colcon.colcon_core.environment:checking '/home/slam/Desktop/Ball_Tracking/ros2_ws/install/kinect_ros2/lib'
+[8.212s] Level 1:colcon.colcon_core.shell:create_environment_hook('kinect_ros2', 'ld_library_path_lib')
+[8.214s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/slam/Desktop/Ball_Tracking/ros2_ws/install/kinect_ros2/share/kinect_ros2/hook/ld_library_path_lib.ps1'
+[8.218s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/slam/Desktop/Ball_Tracking/ros2_ws/install/kinect_ros2/share/kinect_ros2/hook/ld_library_path_lib.dsv'
+[8.222s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/slam/Desktop/Ball_Tracking/ros2_ws/install/kinect_ros2/share/kinect_ros2/hook/ld_library_path_lib.sh'
+[8.227s] Level 1:colcon.colcon_core.environment:checking '/home/slam/Desktop/Ball_Tracking/ros2_ws/install/kinect_ros2/bin'
+[8.228s] Level 1:colcon.colcon_core.environment:checking '/home/slam/Desktop/Ball_Tracking/ros2_ws/install/kinect_ros2/lib/pkgconfig/kinect_ros2.pc'
+[8.231s] Level 1:colcon.colcon_core.environment:checking '/home/slam/Desktop/Ball_Tracking/ros2_ws/install/kinect_ros2/lib/python3.10/site-packages'
+[8.235s] Level 1:colcon.colcon_core.environment:checking '/home/slam/Desktop/Ball_Tracking/ros2_ws/install/kinect_ros2/bin'
+[8.239s] INFO:colcon.colcon_core.shell:Creating package script '/home/slam/Desktop/Ball_Tracking/ros2_ws/install/kinect_ros2/share/kinect_ros2/package.ps1'
+[8.250s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/slam/Desktop/Ball_Tracking/ros2_ws/install/kinect_ros2/share/kinect_ros2/package.dsv'
+[8.254s] INFO:colcon.colcon_core.shell:Creating package script '/home/slam/Desktop/Ball_Tracking/ros2_ws/install/kinect_ros2/share/kinect_ros2/package.sh'
+[8.259s] INFO:colcon.colcon_core.shell:Creating package script '/home/slam/Desktop/Ball_Tracking/ros2_ws/install/kinect_ros2/share/kinect_ros2/package.bash'
+[8.267s] INFO:colcon.colcon_core.shell:Creating package script '/home/slam/Desktop/Ball_Tracking/ros2_ws/install/kinect_ros2/share/kinect_ros2/package.zsh'
+[8.274s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/slam/Desktop/Ball_Tracking/ros2_ws/install/kinect_ros2/share/colcon-core/packages/kinect_ros2)
+[8.277s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(kinect_ros2)
+[8.278s] Level 1:colcon.colcon_core.environment:checking '/home/slam/Desktop/Ball_Tracking/ros2_ws/install/kinect_ros2' for CMake module files
+[8.283s] Level 1:colcon.colcon_core.environment:checking '/home/slam/Desktop/Ball_Tracking/ros2_ws/install/kinect_ros2' for CMake config files
+[8.287s] Level 1:colcon.colcon_core.shell:create_environment_hook('kinect_ros2', 'cmake_prefix_path')
+[8.289s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/slam/Desktop/Ball_Tracking/ros2_ws/install/kinect_ros2/share/kinect_ros2/hook/cmake_prefix_path.ps1'
+[8.293s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/slam/Desktop/Ball_Tracking/ros2_ws/install/kinect_ros2/share/kinect_ros2/hook/cmake_prefix_path.dsv'
+[8.298s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/slam/Desktop/Ball_Tracking/ros2_ws/install/kinect_ros2/share/kinect_ros2/hook/cmake_prefix_path.sh'
+[8.306s] Level 1:colcon.colcon_core.environment:checking '/home/slam/Desktop/Ball_Tracking/ros2_ws/install/kinect_ros2/lib'
+[8.307s] Level 1:colcon.colcon_core.shell:create_environment_hook('kinect_ros2', 'ld_library_path_lib')
+[8.309s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/slam/Desktop/Ball_Tracking/ros2_ws/install/kinect_ros2/share/kinect_ros2/hook/ld_library_path_lib.ps1'
+[8.314s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/slam/Desktop/Ball_Tracking/ros2_ws/install/kinect_ros2/share/kinect_ros2/hook/ld_library_path_lib.dsv'
+[8.319s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/slam/Desktop/Ball_Tracking/ros2_ws/install/kinect_ros2/share/kinect_ros2/hook/ld_library_path_lib.sh'
+[8.323s] Level 1:colcon.colcon_core.environment:checking '/home/slam/Desktop/Ball_Tracking/ros2_ws/install/kinect_ros2/bin'
+[8.324s] Level 1:colcon.colcon_core.environment:checking '/home/slam/Desktop/Ball_Tracking/ros2_ws/install/kinect_ros2/lib/pkgconfig/kinect_ros2.pc'
+[8.326s] Level 1:colcon.colcon_core.environment:checking '/home/slam/Desktop/Ball_Tracking/ros2_ws/install/kinect_ros2/lib/python3.10/site-packages'
+[8.329s] Level 1:colcon.colcon_core.environment:checking '/home/slam/Desktop/Ball_Tracking/ros2_ws/install/kinect_ros2/bin'
+[8.332s] INFO:colcon.colcon_core.shell:Creating package script '/home/slam/Desktop/Ball_Tracking/ros2_ws/install/kinect_ros2/share/kinect_ros2/package.ps1'
+[8.340s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/slam/Desktop/Ball_Tracking/ros2_ws/install/kinect_ros2/share/kinect_ros2/package.dsv'
+[8.346s] INFO:colcon.colcon_core.shell:Creating package script '/home/slam/Desktop/Ball_Tracking/ros2_ws/install/kinect_ros2/share/kinect_ros2/package.sh'
+[8.350s] INFO:colcon.colcon_core.shell:Creating package script '/home/slam/Desktop/Ball_Tracking/ros2_ws/install/kinect_ros2/share/kinect_ros2/package.bash'
+[8.353s] INFO:colcon.colcon_core.shell:Creating package script '/home/slam/Desktop/Ball_Tracking/ros2_ws/install/kinect_ros2/share/kinect_ros2/package.zsh'
+[8.357s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/slam/Desktop/Ball_Tracking/ros2_ws/install/kinect_ros2/share/colcon-core/packages/kinect_ros2)
+[9.961s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/slam/Desktop/Ball_Tracking/ros2_ws/src/ball_tracking_pkg': PYTHONPATH=/home/slam/Desktop/Ball_Tracking/ros2_ws/build/ball_tracking_pkg/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/slam/Desktop/Ball_Tracking/ros2_ws/install/ball_tracking_pkg/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/ball_tracking_pkg build --build-base /home/slam/Desktop/Ball_Tracking/ros2_ws/build/ball_tracking_pkg/build install --record /home/slam/Desktop/Ball_Tracking/ros2_ws/build/ball_tracking_pkg/install.log --single-version-externally-managed install_data
+[12.040s] Level 1:colcon.colcon_core.environment:checking '/home/slam/Desktop/Ball_Tracking/ros2_ws/install/ball_tracking_pkg' for CMake module files
+[12.043s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/slam/Desktop/Ball_Tracking/ros2_ws/src/ball_tracking_pkg' returned '0': PYTHONPATH=/home/slam/Desktop/Ball_Tracking/ros2_ws/build/ball_tracking_pkg/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/slam/Desktop/Ball_Tracking/ros2_ws/install/ball_tracking_pkg/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/ball_tracking_pkg build --build-base /home/slam/Desktop/Ball_Tracking/ros2_ws/build/ball_tracking_pkg/build install --record /home/slam/Desktop/Ball_Tracking/ros2_ws/build/ball_tracking_pkg/install.log --single-version-externally-managed install_data
+[12.049s] Level 1:colcon.colcon_core.environment:checking '/home/slam/Desktop/Ball_Tracking/ros2_ws/install/ball_tracking_pkg' for CMake config files
+[12.063s] Level 1:colcon.colcon_core.environment:checking '/home/slam/Desktop/Ball_Tracking/ros2_ws/install/ball_tracking_pkg/lib'
+[12.064s] Level 1:colcon.colcon_core.environment:checking '/home/slam/Desktop/Ball_Tracking/ros2_ws/install/ball_tracking_pkg/bin'
+[12.064s] Level 1:colcon.colcon_core.environment:checking '/home/slam/Desktop/Ball_Tracking/ros2_ws/install/ball_tracking_pkg/lib/pkgconfig/ball_tracking_pkg.pc'
+[12.066s] Level 1:colcon.colcon_core.environment:checking '/home/slam/Desktop/Ball_Tracking/ros2_ws/install/ball_tracking_pkg/lib/python3.10/site-packages'
+[12.066s] Level 1:colcon.colcon_core.shell:create_environment_hook('ball_tracking_pkg', 'pythonpath')
+[12.067s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/slam/Desktop/Ball_Tracking/ros2_ws/install/ball_tracking_pkg/share/ball_tracking_pkg/hook/pythonpath.ps1'
+[12.070s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/slam/Desktop/Ball_Tracking/ros2_ws/install/ball_tracking_pkg/share/ball_tracking_pkg/hook/pythonpath.dsv'
+[12.073s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/slam/Desktop/Ball_Tracking/ros2_ws/install/ball_tracking_pkg/share/ball_tracking_pkg/hook/pythonpath.sh'
+[12.077s] Level 1:colcon.colcon_core.environment:checking '/home/slam/Desktop/Ball_Tracking/ros2_ws/install/ball_tracking_pkg/bin'
+[12.078s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(ball_tracking_pkg)
+[12.079s] INFO:colcon.colcon_core.shell:Creating package script '/home/slam/Desktop/Ball_Tracking/ros2_ws/install/ball_tracking_pkg/share/ball_tracking_pkg/package.ps1'
+[12.084s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/slam/Desktop/Ball_Tracking/ros2_ws/install/ball_tracking_pkg/share/ball_tracking_pkg/package.dsv'
+[12.088s] INFO:colcon.colcon_core.shell:Creating package script '/home/slam/Desktop/Ball_Tracking/ros2_ws/install/ball_tracking_pkg/share/ball_tracking_pkg/package.sh'
+[12.091s] INFO:colcon.colcon_core.shell:Creating package script '/home/slam/Desktop/Ball_Tracking/ros2_ws/install/ball_tracking_pkg/share/ball_tracking_pkg/package.bash'
+[12.093s] INFO:colcon.colcon_core.shell:Creating package script '/home/slam/Desktop/Ball_Tracking/ros2_ws/install/ball_tracking_pkg/share/ball_tracking_pkg/package.zsh'
+[12.095s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/slam/Desktop/Ball_Tracking/ros2_ws/install/ball_tracking_pkg/share/colcon-core/packages/ball_tracking_pkg)
+[12.098s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:closing loop
+[12.100s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:loop closed
+[12.101s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete finished with '0'
+[12.102s] DEBUG:colcon.colcon_core.event_reactor:joining thread
+[12.147s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.terminal_notifier': Not used on non-Darwin systems
+[12.148s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.win32': Not used on non-Windows systems
+[12.148s] INFO:colcon.colcon_notification.desktop_notification:Sending desktop notification using 'notify2'
+[12.324s] DEBUG:colcon.colcon_core.event_reactor:joined thread
+[12.326s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/slam/Desktop/Ball_Tracking/ros2_ws/install/local_setup.ps1'
+[12.333s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/slam/Desktop/Ball_Tracking/ros2_ws/install/_local_setup_util_ps1.py'
+[12.344s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/slam/Desktop/Ball_Tracking/ros2_ws/install/setup.ps1'
+[12.352s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/slam/Desktop/Ball_Tracking/ros2_ws/install/local_setup.sh'
+[12.359s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/slam/Desktop/Ball_Tracking/ros2_ws/install/_local_setup_util_sh.py'
+[12.364s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/slam/Desktop/Ball_Tracking/ros2_ws/install/setup.sh'
+[12.371s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/slam/Desktop/Ball_Tracking/ros2_ws/install/local_setup.bash'
+[12.376s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/slam/Desktop/Ball_Tracking/ros2_ws/install/setup.bash'
+[12.384s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/slam/Desktop/Ball_Tracking/ros2_ws/install/local_setup.zsh'
+[12.390s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/slam/Desktop/Ball_Tracking/ros2_ws/install/setup.zsh'

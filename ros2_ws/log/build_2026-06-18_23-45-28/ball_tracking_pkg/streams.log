@@ -1,0 +1,25 @@
+[5.567s] Invoking command in '/home/slam/Desktop/Ball_Tracking/ros2_ws/src/ball_tracking_pkg': PYTHONPATH=/home/slam/Desktop/Ball_Tracking/ros2_ws/build/ball_tracking_pkg/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/slam/Desktop/Ball_Tracking/ros2_ws/install/ball_tracking_pkg/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/ball_tracking_pkg build --build-base /home/slam/Desktop/Ball_Tracking/ros2_ws/build/ball_tracking_pkg/build install --record /home/slam/Desktop/Ball_Tracking/ros2_ws/build/ball_tracking_pkg/install.log --single-version-externally-managed install_data
+[7.168s] running egg_info
+[7.173s] writing ../../build/ball_tracking_pkg/ball_tracking_pkg.egg-info/PKG-INFO
+[7.176s] writing dependency_links to ../../build/ball_tracking_pkg/ball_tracking_pkg.egg-info/dependency_links.txt
+[7.178s] writing entry points to ../../build/ball_tracking_pkg/ball_tracking_pkg.egg-info/entry_points.txt
+[7.179s] writing requirements to ../../build/ball_tracking_pkg/ball_tracking_pkg.egg-info/requires.txt
+[7.180s] writing top-level names to ../../build/ball_tracking_pkg/ball_tracking_pkg.egg-info/top_level.txt
+[7.191s] reading manifest file '../../build/ball_tracking_pkg/ball_tracking_pkg.egg-info/SOURCES.txt'
+[7.197s] writing manifest file '../../build/ball_tracking_pkg/ball_tracking_pkg.egg-info/SOURCES.txt'
+[7.198s] running build
+[7.199s] running build_py
+[7.200s] copying ball_tracking_pkg/vision_node.py -> /home/slam/Desktop/Ball_Tracking/ros2_ws/build/ball_tracking_pkg/build/lib/ball_tracking_pkg
+[7.206s] running install
+[7.209s] running install_lib
+[7.216s] copying /home/slam/Desktop/Ball_Tracking/ros2_ws/build/ball_tracking_pkg/build/lib/ball_tracking_pkg/vision_node.py -> /home/slam/Desktop/Ball_Tracking/ros2_ws/install/ball_tracking_pkg/lib/python3.10/site-packages/ball_tracking_pkg
+[7.224s] byte-compiling /home/slam/Desktop/Ball_Tracking/ros2_ws/install/ball_tracking_pkg/lib/python3.10/site-packages/ball_tracking_pkg/vision_node.py to vision_node.cpython-310.pyc
+[7.239s] running install_data
+[7.241s] running install_egg_info
+[7.253s] removing '/home/slam/Desktop/Ball_Tracking/ros2_ws/install/ball_tracking_pkg/lib/python3.10/site-packages/ball_tracking_pkg-0.0.0-py3.10.egg-info' (and everything under it)
+[7.257s] Copying ../../build/ball_tracking_pkg/ball_tracking_pkg.egg-info to /home/slam/Desktop/Ball_Tracking/ros2_ws/install/ball_tracking_pkg/lib/python3.10/site-packages/ball_tracking_pkg-0.0.0-py3.10.egg-info
+[7.271s] running install_scripts
+[7.410s] Installing control_node script to /home/slam/Desktop/Ball_Tracking/ros2_ws/install/ball_tracking_pkg/lib/ball_tracking_pkg
+[7.412s] Installing vision_node script to /home/slam/Desktop/Ball_Tracking/ros2_ws/install/ball_tracking_pkg/lib/ball_tracking_pkg
+[7.416s] writing list of installed files to '/home/slam/Desktop/Ball_Tracking/ros2_ws/build/ball_tracking_pkg/install.log'
+[7.650s] Invoked command in '/home/slam/Desktop/Ball_Tracking/ros2_ws/src/ball_tracking_pkg' returned '0': PYTHONPATH=/home/slam/Desktop/Ball_Tracking/ros2_ws/build/ball_tracking_pkg/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/slam/Desktop/Ball_Tracking/ros2_ws/install/ball_tracking_pkg/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/ball_tracking_pkg build --build-base /home/slam/Desktop/Ball_Tracking/ros2_ws/build/ball_tracking_pkg/build install --record /home/slam/Desktop/Ball_Tracking/ros2_ws/build/ball_tracking_pkg/install.log --single-version-externally-managed install_data
