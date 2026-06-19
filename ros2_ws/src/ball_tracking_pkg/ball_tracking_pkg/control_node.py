@@ -34,6 +34,9 @@ class ControlNode(Node):
         self.search_rotations = 0.0  
         self.max_rotations = 2.0     
         
+        # --- SENSOR MEMORY ---
+        self.last_valid_depth = 1000.0 # Default to a safe distance
+        
         if HAS_KOBUKI:
             self.kobuki_robot = QBot('/dev/ttyUSB0')
             self.get_logger().info("Connected to Kobuki robot via USB.")
@@ -57,6 +60,7 @@ class ControlNode(Node):
             
             # Calculate Target Forward/Backward Movement
             if depth != -1.0:
+                self.last_valid_depth = depth # Remember the last good reading
                 depth_error = depth - self.target_depth
                 
                 # DEADBAND FIX: Don't try to move if we are already close enough
@@ -64,10 +68,17 @@ class ControlNode(Node):
                     target_linear_x = 0.0
                 else:
                     target_linear_x = self.kp_linear * depth_error
-                    # Increased max speed from 200 to 350 for faster overall tracking
                     target_linear_x = max(-350.0, min(target_linear_x, 350.0))
             else:
-                target_linear_x = 0.0
+                # --- CONTEXT-AWARE REVERSE LOGIC ---
+                # The sensor just dropped a frame. Let's check where the ball was last seen.
+                if self.last_valid_depth < 600.0:
+                    # It was already getting dangerously close. Assume it hit the blindspot.
+                    target_linear_x = -150.0 
+                else:
+                    # It was far away. This is just a sensor glitch/noise. 
+                    # Just stop (coast) and wait for the next good frame.
+                    target_linear_x = 0.0
 
         # STATE 2: Ball Lost - Searching State
         elif state == 0.0 and error_x != 0.0:
@@ -86,7 +97,6 @@ class ControlNode(Node):
             target_angular_z = 0.0
             
         # --- APPLY VELOCITY SMOOTHING ---
-        # This prevents the violent jerk by gradually ramping the current speed to the target speed
         self.current_linear_x = (self.alpha_v * target_linear_x) + ((1.0 - self.alpha_v) * self.current_linear_x)
         self.current_angular_z = (self.alpha_v * target_angular_z) + ((1.0 - self.alpha_v) * self.current_angular_z)
         
@@ -107,7 +117,6 @@ class ControlNode(Node):
             kobuki_radius = 0
             kobuki_speed = int(self.current_linear_x)
         else:
-            # Prevent Division by Zero just in case
             kobuki_radius = int(self.current_linear_x / self.current_angular_z) if self.current_angular_z != 0 else 0
             kobuki_speed = int(self.current_linear_x)
 
@@ -123,7 +132,6 @@ def main(args=None):
         pass
     finally:
         if HAS_KOBUKI:
-             # Ensure ints are passed to prevent type errors on shutdown
              node.kobuki_robot.set_velocity(0, 0)
         node.destroy_node()
         rclpy.shutdown()
